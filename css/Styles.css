@@ -1,0 +1,178 @@
+/* Este es el fondo de la página */
+/* Colocamos una imagen de fondo sin que se repita, ponemos su
+respectivo alto, fuente y tamaño de letra */
+body{
+background-image:url("../imagenes/fondo.jpg");
+background-size:cover;
+min-height: 100%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 16px
+}
+/* Aquí empieza la cabecera de la página */
+/* El tipo de letra que vamos a utilizar para el nombre de la empresa*/
+@font-face {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+src: url('AlegreyaSC-Black.ttf');
+}
+h1 {
+font-size: 60px;
+text-align: left;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* En la cabecera hemos puesto un borde sólido, posicion relativa,
+una imagen como fondo sin repeticiones y tipo de letra Verdana*/
+header {
+border-style:solid;
+position: relative;
+background-image: url("../Imagenes/fondoheader.jpg");
+background-size: cover;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Aquí termina la cabecera de la página */
+/* Empezamos con el menú*/
+/* Cambiamos el tamaño del texto y quitamos decoración*/
+nav a {
+text-decoration:none;
+font-size:14px;
+} 
+/* Colocamos fuente, alineamos el menú, hacemos un padding de 10 px
+colocamos como fondo una imagen, ponemos sombras, bordes y tipo de borde
+centramos el texto y colocamos su respectivo ancho y alto*/
+nav li {
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ display: inline-block;
+ padding:10px;
+ background-image:url("../Imagenes/navdegradado.jpg");
+ background-repeat:repeat-x;
+ border:5px solid #000;
+ color:#fff;
+ border-radius: 40px 10px;
+ width: 280px;
+ height: 15px;
+ text-align:center;
+ font-weight: bold;
+ box-shadow: 2px 2px 5px #000;
+
+}
+/* Para añadirle animación al menú*/
+nav li:hover{
+    color:rgb(38, 216, 172);
+}
+/* Terminamos con el menú*/
+
+/* Empezamos con secciones*/
+
+/*Sección de Portada*/
+/*Aquí empezamos a dar márgenes a las fotos, y a los respectivos textos y títulos para que estén alineados*/
+#secp {margin-bottom: 20%;}
+#imgp1 {margin-left: 4.5%;}
+#imgp2 {margin-left: 4.5%;}
+#imgp3 {margin-left: 10%;}
+#imgp4 {margin-left: 5%;}
+#imgp5 {margin-left: 5%;}
+#pp {margin-left: 4.5%; margin-bottom: 4%;}
+#titulop {margin-left: 4.5%;}
+/*Modificamos los textos de manera en la que los metemos en una caja del mismo tamaño que las fotos, a las que hacen
+referencia, incluyendo un borde con un color rgb a nuestro gusto, que le hemos añadido padding para que dejase un poco 
+de espacio al texto. Usando float hemos puesto los textos en línea. Por último hemos justificado el texto, con el text-align. */
+
+#pp1 {box-sizing: content-box; 
+    width: 265px;
+    float: left;
+    margin-left: 10%;
+    text-align: justify;
+    border: solid rgba(30, 239, 209, 0.725) 5px;
+    padding: 1%;}
+#pp2 {box-sizing: content-box; 
+    width: 265px;
+    float: left;
+    margin-left: 5.25%;
+    text-align: justify;
+    border: solid rgba(30, 239, 209, 0.725) 5px;
+    padding: 1%;}
+#pp3 {box-sizing: content-box; 
+    width: 265px;
+    float: left;
+    margin-left: 5.3%;
+    text-align: justify;
+    border: solid rgba(30, 239, 209, 0.725) 5px;
+    padding: 1%;}
+/* Termina la sección de Portada*/
+
+
+/*Seccion de Galería */
+/* Para colocar las imágenes de una forma ordenada hemos usado margin para crear un espacio entre ellas y poder centrar la tabla y las imágenes en la página */
+#tableg {margin-left: 7.5%;}
+#gal1 {margin-bottom: 4%;}
+#gal1:hover{transform: scale(1,2);}
+
+
+/* Termina la sección de Galería */
+/* Seccion de Nosotros */
+/* Centrar la frase y cambiar tamaño de letra a 25px */
+#fraseempresa {
+    text-align: center;
+    font-size: 25px;
+}
+/*Título de la sección de preguntas y respuestas. Cambio de fuente a Verdana, url a para poner la fuente Alegreya, con float moverlo a la izquierda,
+cambio de letra a 30px y margen por debajo de un 1% */
+#titulopreguntas{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    src: url('AlegreyaSC-Black.ttf');
+    float: left;
+    font-size: 30px;
+    margin-bottom: 1%;
+}
+/*Borde solido por arriba negro*/
+#preguntas1 {
+    border-style: solid;
+}
+/* Alineación de texto a la izquierda, con su ancho, sin margen ni padding, float a la derecha,
+sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
+#preguntas2 {
+    text-align: left;
+    width: 100%;
+    float: right;
+    margin-top: 0%;
+    padding: 0%;
+    font-size: 20px;
+    list-style: none;   
+}
+
+/* Termina la sección de Nosotros */
+/* Terminamos con las secciones*/
+
+/* Empezamos con el footer*/
+/*En el footer lo que hemos hecho ha sido poner Verdana, una foto de fondo, su respectivo ancho, alto y margen y un borde solido*/
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("../Imagenes/fondoheader.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    margin-top: 20%;
+    background-color:#37A5CF;
+    border-style:solid;
+    
+    
+}
+/*Para la parte que muestra el desarrollador y fecha, hemos hecho una lista no ordenada, ajustado el contenido a lo que queriamos con box-sizing,
+ quitado el circulo negro de la lista, metido un float para que fuera a la izquierda y por último, puesto su respectivo ancho y margen arriba.*/
+#lfooter{
+ box-sizing: content-box; 
+ width: 500px;  
+ float: left;
+ list-style: none;
+ margin-top: 65px;
+
+}
+/* En la parte de los contactos lo que hemos hecho ha sido una tabla para colocar las fotos, hemos ajustado el contenido
+con box-sizing, metido un float para colocarlo a la dercha y por último, le hemos puesto su respectivo ancho y alto.*/
+#tablafooter {
+box-sizing: content-box; 
+width: 10%;
+height: 10%;
+float: right;
+}
+/* Terminamos el footer */
