@@ -6,11 +6,27 @@
 </head>
 <body>
 <label for="name">Nombre:</label>
-<input type="text" name="name" maxlength="30" placeholder="Escribe tu nombre"> 
+<input type="text" name="name" maxlength="30" placeholder="Escribe tu nombre" autofocus>
+<br>
 <label for="apellido">Apellido:</label>
 <input type="text" name="apellido" maxlength="30" placeholder="Escribe tu apellido">
+<br>
 <label for="email">Email:</label>
-<input type="email" placeholder="usuario@dominio.com" size="40" name="email" required>
+<input type="email" placeholder="usuario@dominio.com" size="40" name="email" required autocomplete="on">
+<br>
 <label for="contraseña">Contraseña:</label>
 <input type="password" name="contraseña" required>
-
+<br>
+Seleccionar genero:
+<select>
+    <option selected disabled hidden value=""></option>
+    <option>Mujer</option>
+    <option>Hombre</option>
+    <option>Otros</option>
+</select>
+<br>
+<input type="checkbox" name="información"/> Deseo recibir información sobre novedades y ofertas 
+<br>
+<input type="checkbox" name="condiciones" required/> Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+<br>
+<input type="submit" value="Enviar"/>
