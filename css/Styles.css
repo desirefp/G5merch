@@ -68,9 +68,13 @@ nav li:hover{
 #secp {margin-bottom: 20%;}
 #imgp1 {margin-left: 4.5%;}
 #imgp2 {margin-left: 4.5%;}
-#imgp3 {margin-left: 10%;}
-#imgp4 {margin-left: 5%;}
-#imgp5 {margin-left: 5%;}
+#imgp3{width: 320px;}
+#contenedor{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+#ch{padding-left: 5px;}
 #pp {margin-left: 4.5%; margin-bottom: 4%;}
 #titulop {margin-left: 4.5%;}
 /*Modificamos los textos de manera en la que los metemos en una caja del mismo tamaño que las fotos, a las que hacen
@@ -78,26 +82,11 @@ referencia, incluyendo un borde con un color rgb a nuestro gusto, que le hemos a
 de espacio al texto. Usando float hemos puesto los textos en línea. Por último hemos justificado el texto, con el text-align. */
 
 #pp1 {box-sizing: content-box; 
-    width: 265px;
-    float: left;
-    margin-left: 10%;
+    width: 310px;
     text-align: justify;
     border: solid rgba(30, 239, 209, 0.725) 5px;
-    padding: 1%;}
-#pp2 {box-sizing: content-box; 
-    width: 265px;
-    float: left;
-    margin-left: 5.25%;
-    text-align: justify;
-    border: solid rgba(30, 239, 209, 0.725) 5px;
-    padding: 1%;}
-#pp3 {box-sizing: content-box; 
-    width: 265px;
-    float: left;
-    margin-left: 5.3%;
-    text-align: justify;
-    border: solid rgba(30, 239, 209, 0.725) 5px;
-    padding: 1%;}
+    padding: 1%;
+}
 /* Termina la sección de Portada*/
 
 
