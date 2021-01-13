@@ -176,3 +176,46 @@ height: 10%;
 float: right;
 }
 /* Terminamos el footer */
+    /* Empezamos con el Formulario*/
+    form {
+        background-color: rgb(105, 204, 163);
+        padding: 40px;
+        margin:0 auto;
+        width: 300px;
+        border-radius: 10px;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    input, textarea, select {
+        border: 0;
+        outline: none;
+        margin: 10px;
+    }
+    .field {
+        border: solid 1px rgb(0, 0, 0);
+        padding: 10px;
+        width: 280px;
+    }
+
+    .field:focus{
+        border-color: rgb(255, 255, 255);
+    }
+
+    .enviar, .restaurar {
+        border-radius: 5px;
+        display:inline-block;
+        padding: 10px;
+        margin: 5px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+
+    }
+    .enviar {
+        background-color: rgb(48, 224, 48);
+    }
+
+    .restaurar{
+        background-color: rgb(219, 43, 43);
+    }
