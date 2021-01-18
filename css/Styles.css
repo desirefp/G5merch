@@ -168,7 +168,8 @@ float: right;
     /* Empezamos con el Formulario*/
     form {
         background-color: rgb(105, 204, 163);
-        padding: 40px;
+        padding: 50px;
+        padding-right: 80px;
         margin:0 auto;
         width: 300px;
         border-radius: 10px;
@@ -209,7 +210,30 @@ float: right;
         background-color: rgb(219, 43, 43);
     
     }
+    [required]{
+        border-color:rgb(94, 255, 0);
+        box-shadow: 0px 0px 8px rgb(48, 202, 99);
+    }
 
+    #margen1 {
+        margin: 0 auto;
+        width: 0 auto;
+    }
+
+    #margen2 {
+        margin: 0 auto;
+        width: 0 auto;
+    }
+    
     fieldset {
-      
+      background-color: rgb(255, 255, 255);
+    }
+
+    legend {
+        background-color: rgb(105, 94, 94);
+        color: white;
+    }
+
+    .botones {
+        display: block
     }

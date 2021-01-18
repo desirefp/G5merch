@@ -6,17 +6,13 @@
 </head>
 <body>
 <form>
-    <label for="name">Nombre:</label>
-    <input type="text" class="field" name="name" maxlength="30" placeholder="Escribe tu nombre" autofocus>
+    <fieldset>
+    <legend>Información personal</legend>
+    <label for="name">Nombre:*</label>
+    <input type="text" class="field" name="name" maxlength="30" placeholder="Escribe tu nombre" autofocus required>
 
-    <label for="apellido">Apellido:</label>
-    <input type="text" class="field" name="apellido" maxlength="30" placeholder="Escribe tu apellido">
-
-    <label for="email">Email:</label>
-    <input type="email" class="field" placeholder="usuario@dominio.com" size="40" name="email" required autocomplete="on">
-
-    <label for="contraseña">Contraseña:</label>
-    <input type="password" class="field" name="contraseña" required>
+    <label for="apellido">Apellido:*</label>
+    <input type="text" class="field" name="apellido" maxlength="30" placeholder="Escribe tu apellido" required>
 
     Seleccionar genero:
     <select class="field">
@@ -26,13 +22,32 @@
         <option>Otros</option>
     </select>
 
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" name="telefono" class="field" placeholder="XXXXXXXXX" required pattern="[0-9]{9}">
+
+    <label for="fecha">Fecha de nacimiento:</label>
+    <input type="date" value="dd/mm/aaaa" name="fecha" class="field">
+
+
+    </fieldset>
+
+    <fieldset>
+    <legend>Usuario</legend>
+    <label for="email">Email:*</label>
+    <input type="email" class="field" placeholder="usuario@dominio.com" size="40" name="email" required autocomplete="on">
+
+    <label for="contraseña">Contraseña:*</label>
+    <input type="password" class="field" name="contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+    </fieldset>
+
     <textarea cols="30" rows="8" class="field" placeholder="Escribe tu comentario..."></textarea>
-    <input type="checkbox" class="field" name="información"/> Deseo recibir información sobre novedades y ofertas 
+    <input type="checkbox" class="field" name="información"  id="margen1" checked/> <p>Deseo recibir información sobre novedades y ofertas</p>
     
-    <input type="checkbox" class="field" name="condiciones" required/> Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos
-   
+    <input type="checkbox" class="field" id="margen2" name="condiciones" required/> <p>Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos.*</p>
+   <div class="botones">
     <input type="submit" class="enviar" value="Registrarse"/>
     <input type="reset" class="restaurar" value="Eliminar"/>
+   </div>
 </form>
 
 
