@@ -146,11 +146,15 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
     border-color:black;
 }
 #tabla{
-    background-image: url("../Imagenes/fondoheader.jpg");
+    background: linear-gradient(90deg, rgba(176,168,176,1) 0%, rgba(117,207,182,0.9332107843137255) 27%, rgba(247,249,250,1) 100%);
 }
 #tabla{
     font-weight:bold;
     text-align:center;
+}
+
+#tabla2{
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(25,134,19,1) 100%);
 }
 /*Termina la sección de Tienda*/
 /* Terminamos con las secciones*/
