@@ -148,7 +148,7 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
 #tabla{
     background: linear-gradient(90deg, rgba(176,168,176,1) 0%, rgba(117,207,182,0.9332107843137255) 27%, rgba(247,249,250,1) 100%);
 }
-#tabla{
+#tabla2{
     font-weight:bold;
     text-align:center;
 }
@@ -269,4 +269,19 @@ float: right;
 
     .botones {
         display: block
+    }
+
+    .grid{
+        margin-left:11.5%;
+        display: grid;
+        grid-template-columns:500px 500px ;
+    }
+
+    .a{
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .b{
+        grid-row-start: 2;
     }
