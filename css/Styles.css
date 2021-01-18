@@ -39,9 +39,12 @@ font-size:14px;
 /* Colocamos fuente, alineamos el menú, hacemos un padding de 10 px
 colocamos como fondo una imagen, ponemos sombras, bordes y tipo de borde
 centramos el texto y colocamos su respectivo ancho y alto*/
+
+
 nav li {
  font-family: Verdana, Geneva, Tahoma, sans-serif;
  display: inline-block;
+ flex-grow: 1;
  padding:10px;
  background-image:url("../Imagenes/navdegradado.jpg");
  background-repeat:repeat-x;
@@ -54,6 +57,12 @@ nav li {
  font-weight: bold;
  box-shadow: 2px 2px 5px #000;
 
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 /* Para añadirle animación al menú*/
 nav li:hover{
@@ -181,7 +190,7 @@ float: right;
         background-color: rgb(105, 204, 163);
         padding: 50px;
         padding-right: 80px;
-        margin:0 auto;
+        margin: 20 auto;
         width: 300px;
         border-radius: 10px;
         font-size: 14px;
@@ -226,14 +235,20 @@ float: right;
         box-shadow: 0px 0px 8px rgb(48, 202, 99);
     }
 
-    #margen1 {
-        margin: 0 auto;
-        width: 0 auto;
-    }
+    input:invalid:required {
+        background-image: linear-gradient(to right, rgba(62, 104, 97, 0.5), rgba(189, 199, 193, 0.555));
+      }
 
-    #margen2 {
-        margin: 0 auto;
-        width: 0 auto;
+    .cuadrado {
+        display: inline-block;
+        margin-top: 50px;
+    }
+    .check {
+     box-sizing: content-box;
+     display:inline-block;
+     width: 250px;
+     height: 80px;
+     margin: 0 auto;
     }
     
     fieldset {
@@ -241,7 +256,7 @@ float: right;
     }
 
     legend {
-        background-color: rgb(105, 94, 94);
+        background-color: rgb(83, 116, 57);
         color: white;
     }
 
