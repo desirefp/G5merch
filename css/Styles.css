@@ -94,7 +94,7 @@ de espacio al texto. Usando float hemos puesto los textos en línea. Por último
 /* Para colocar las imágenes de una forma ordenada hemos usado margin para crear un espacio entre ellas y poder centrar la tabla y las imágenes en la página */
 #tableg {margin-left: 7.5%;}
 #gal1 {margin-bottom: 4%;}
-#gal1:hover{transform: scale(1,2);}
+#gal1:hover{transform: scale(1.25,1.25);}
 
 
 /* Termina la sección de Galería */
@@ -130,6 +130,20 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
 }
 
 /* Termina la sección de Nosotros */
+/*Sección de Tienda*/
+#tproductos{
+    width: 80%;
+    margin-left: 10%;
+    border-color:black;
+}
+#tabla{
+    background-image: url("../Imagenes/fondoheader.jpg");
+}
+#tabla{
+    font-weight:bold;
+    text-align:center;
+}
+/*Termina la sección de Tienda*/
 /* Terminamos con las secciones*/
 
 /* Empezamos con el footer*/
