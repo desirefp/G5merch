@@ -260,6 +260,8 @@ float: right;
     
     fieldset {
       background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      border: 2px solid grey;
     }
 
     legend {
