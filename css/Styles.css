@@ -36,6 +36,7 @@ nav a {
 text-decoration:none;
 font-size:14px;
 color: white;
+
 } 
 /* Colocamos fuente, alineamos el menú, hacemos un padding de 10 px
 colocamos como fondo una imagen, ponemos sombras, bordes y tipo de borde
@@ -55,6 +56,7 @@ nav li {
  text-align:center;
  font-weight: bold;
  box-shadow: 2px 2px 5px #000;
+
 
 }
 
@@ -192,6 +194,9 @@ footer {
 }
 /* En la parte de los contactos lo que hemos hecho ha sido una tabla para colocar las fotos, hemos ajustado el contenido
 con box-sizing, metido un float para colocarlo a la dercha y por último, le hemos puesto su respectivo ancho y alto.*/
+ul{
+   list-style: none;
+}
 #tablafooter {
 box-sizing: content-box; 
 width: 10%;
