@@ -103,11 +103,11 @@ de espacio al texto. Usando float hemos puesto los textos en línea. Por último
 /* Para colocar las imágenes de una forma ordenada hemos usado margin para crear un espacio entre ellas y poder centrar la tabla y las imágenes en la página */
 #tableg {
     width:100%;
-    margin-left:1%;
+    margin-left:3%;
 }
 #gal1 {margin-bottom: 4%;}
 #gal1:hover{transform: scale(1.25,1.25);}
-#secgal{width: 100%;}
+#secgal{width: 95%;}
 
 
 /* Termina la sección de Galería */
