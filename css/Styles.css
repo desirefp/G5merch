@@ -251,7 +251,7 @@ float: right;
     }
 
     input:invalid:required {
-        background-image: linear-gradient(to right, rgba(62, 104, 97, 0.5), rgba(189, 199, 193, 0.555));
+        background-image: linear-gradient(to right, rgba(168, 99, 53, 0.5), rgba(178, 196, 20, 0.555));
       }
 
     .cuadrado {
