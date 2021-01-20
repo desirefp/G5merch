@@ -24,7 +24,7 @@ una imagen como fondo sin repeticiones y tipo de letra Verdana*/
 header {
 border-style:solid;
 position: relative;
-background-image: url("../Imagenes/fondoheader.jpg");
+background-image:url("../imagenes/headergris.png");
 background-size: cover;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -46,7 +46,7 @@ nav li {
  display: inline-block;
  flex-grow: 1;
  padding:10px;
- background-image:url("../Imagenes/navdegradado.jpg");
+ background-image:linear-gradient(90deg, rgba(156,158,143,1) 5%, rgba(197,221,83,1) 74%);
  background-repeat:repeat-x;
  border:5px solid #000;
  color: white;
@@ -101,13 +101,9 @@ de espacio al texto. Usando float hemos puesto los textos en línea. Por último
 
 /*Seccion de Galería */
 /* Para colocar las imágenes de una forma ordenada hemos usado margin para crear un espacio entre ellas y poder centrar la tabla y las imágenes en la página */
-#tableg {
-    width:100%;
-    margin-left:1%;
-}
+#tableg {margin-left: 7.5%;}
 #gal1 {margin-bottom: 4%;}
 #gal1:hover{transform: scale(1.25,1.25);}
-#secgal{width: 100%;}
 
 
 /* Termina la sección de Galería */
@@ -167,7 +163,7 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
 /*En el footer lo que hemos hecho ha sido poner Verdana, una foto de fondo, su respectivo ancho, alto y margen y un borde solido*/
 footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url("../Imagenes/fondoheader.jpg");
+    background-image: url("../Imagenes/headergris.png");
     background-size: cover;
     width: 100%;
     height: 150px;
@@ -198,7 +194,7 @@ float: right;
 /* Terminamos el footer */
     /* Empezamos con el Formulario*/
     form {
-        background-color: rgb(105, 204, 163);
+        background-color: rgb(189, 189, 132);
         padding: 50px;
         padding-right: 80px;
         margin: 20 auto;
@@ -242,8 +238,8 @@ float: right;
     
     }
     [required]{
-        border-color:rgb(94, 255, 0);
-        box-shadow: 0px 0px 8px rgb(48, 202, 99);
+        border-color:rgb(192, 96, 51);
+        box-shadow: 0px 0px 8px rgb(221, 80, 15);
     }
 
     input:invalid:required {
@@ -265,11 +261,11 @@ float: right;
     fieldset {
       background-color: rgb(255, 255, 255);
       border-radius: 10px;
-      border: 2px solid  rgb(83, 116, 57);
+      border: 2px solid  rgb(136, 145, 19);
     }
 
     legend {
-        background-color: rgb(83, 116, 57);
+        background-color:  rgb(136, 145, 19);
         color: white;
     }
 
