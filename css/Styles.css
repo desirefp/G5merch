@@ -153,6 +153,7 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
     width: 80%;
     margin-left: 10%;
     border-color:black;
+    margin-top: 5%;
 }
 #tabla{
     background: radial-gradient(circle, rgb(182, 187, 120) 0%, rgb(152, 158, 66) 100%);
@@ -176,7 +177,7 @@ footer {
     background-size: cover;
     width: 100%;
     height: 150px;
-    margin-top: 20%;
+    margin-top: 10%;
     background-color:#37A5CF;
     border-style:solid;
     
@@ -252,6 +253,8 @@ float: right;
     [required]{
         border-color:rgb(192, 96, 51);
         box-shadow: 0px 0px 8px rgb(221, 80, 15);
+        margin-left: 3px;
+        font-weight: bold;
     }
 
     input:invalid:required {
