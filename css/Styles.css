@@ -35,6 +35,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 nav a {
 text-decoration:none;
 font-size:14px;
+color: white;
 } 
 /* Colocamos fuente, alineamos el menú, hacemos un padding de 10 px
 colocamos como fondo una imagen, ponemos sombras, bordes y tipo de borde
@@ -46,10 +47,8 @@ nav li {
  display: inline-block;
  flex-grow: 1;
  padding:10px;
- background-image:linear-gradient(90deg, rgba(156,158,143,1) 5%, rgba(197,221,83,1) 74%);
- background-repeat:repeat-x;
+ background-image:linear-gradient(90deg, rgb(181, 187, 143) 5%, rgb(188, 206, 98) 74%);
  border:5px solid #000;
- color: white;
  border-radius: 40px 10px;
  width: 280px;
  height: 15px;
@@ -65,8 +64,8 @@ nav {
     flex-wrap: wrap;
 }
 /* Para añadirle animación al menú*/
-nav li:hover{
-    color:rgb(38, 216, 172);
+nav a:hover{
+    color:rgb(200, 255, 2);
 }
 /* Terminamos con el menú*/
 
@@ -93,7 +92,7 @@ de espacio al texto. Usando float hemos puesto los textos en línea. Por último
 #pp1 {box-sizing: content-box; 
     width: 310px;
     text-align: justify;
-    border: solid rgba(30, 239, 209, 0.725) 5px;
+    border: solid rgba(218, 235, 68, 0.725) 5px;
     padding: 1%;
 }
 /* Termina la sección de Portada*/
@@ -154,7 +153,7 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
     border-color:black;
 }
 #tabla{
-    background: linear-gradient(90deg, rgba(176,168,176,1) 0%, rgba(117,207,182,0.9332107843137255) 27%, rgba(247,249,250,1) 100%);
+    background: radial-gradient(circle, rgb(182, 187, 120) 0%, rgb(152, 158, 66) 100%);
 }
 #tabla2{
     font-weight:bold;
@@ -162,7 +161,7 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
 }
 
 #tabla2{
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(25,134,19,1) 100%);
+    background: linear-gradient(0deg, rgb(129, 134, 35) 0%, rgb(151, 158, 25) 100%);
 }
 /*Termina la sección de Tienda*/
 /* Terminamos con las secciones*/
