@@ -3,7 +3,6 @@
 respectivo alto, fuente y tamaño de letra */
 body{
 background-image:url("../imagenes/fondo.jpg");
-background-size:cover;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: 16px
 }
@@ -14,7 +13,9 @@ font-size: 16px
     background-size: 100% 31%;
     background-repeat: no-repeat;
     background-color: rgb(233, 217, 217);
-   
+    display: grid;
+    grid-template-rows: 180px 200px 400px 400px 300px;
+    grid-template-columns: 100%;
 }
 
 /* Aquí empieza la cabecera de la página */
@@ -50,6 +51,8 @@ flex-wrap: nowrap;
 align-items: center;
 width: 100%;
 justify-content: space-between;
+grid-row-start: 1;
+grid-row-end: 2;
 }
 
 /* Aquí termina la cabecera de la página */
@@ -111,14 +114,13 @@ nav a:hover{
 #secp {
     margin-bottom: 10%;
     margin-top: 33%;
-    display: grid;
-    grid-template-rows: 14%, 24%, 24%;
+
 }
 
 .area1 {
 
-    grid-row-start: 1;
-    grid-row-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 section >div {
@@ -145,8 +147,8 @@ h4 {
 
 .area2{
 
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
     margin-top: 5%;
 }
 
@@ -172,8 +174,8 @@ h4 {
 
 
 .area3{
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
     margin-top: 3%;
 
 }
@@ -286,6 +288,7 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
 
 /* Empezamos con el footer*/
 /*En el footer lo que hemos hecho ha sido poner Verdana, una foto de fondo, su respectivo ancho, alto y margen y un borde solido*/
+
 footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 98%;
@@ -294,21 +297,19 @@ footer {
     border-style:solid;
     position: absolute;
     
-    
+}
+
+.footerportada {
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
 /*Para la parte que muestra el desarrollador y fecha, hemos hecho una lista no ordenada, ajustado el contenido a lo que queriamos con box-sizing,
  quitado el circulo negro de la lista, metido un float para que fuera a la izquierda y por último, puesto su respectivo ancho y margen arriba.*/
 
-
-}
 /* En la parte de los contactos lo que hemos hecho ha sido una tabla para colocar las fotos, hemos ajustado el contenido
 con box-sizing, metido un float para colocarlo a la dercha y por último, le hemos puesto su respectivo ancho y alto.*/
 
 
-
-
-
-}
 /* Terminamos el footer */
     /* Empezamos con el Formulario*/
     form {
