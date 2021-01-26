@@ -238,6 +238,7 @@ de espacio al texto. Usando float hemos puesto los textos en línea. Por último
     text-align: center;
     font-size: 25px;
 }
+
 /*Título de la sección de preguntas y respuestas. Cambio de fuente a Verdana, url a para poner la fuente Alegreya, con float moverlo a la izquierda,
 cambio de letra a 30px y margen por debajo de un 1% */
 #titulopreguntas{
@@ -324,10 +325,10 @@ float: right;
     /* Empezamos con el Formulario*/
     form {
         background-color: rgb(189, 189, 132);
-        padding: 50px;
-        padding-right: 80px;
-        margin: 20 auto;
-        width: 300px;
+        padding: 10%;
+        padding-right: 25%;
+        margin: 10%;
+        width: 50%;
         border-radius: 10px;
         font-size: 14px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -336,12 +337,12 @@ float: right;
     input, textarea, select {
         border: 0;
         outline: none;
-        margin: 10px;
+        margin: 4%;
     }
     .field {
         border: solid 1px rgb(0, 0, 0);
-        padding: 10px;
-        width: 280px;
+        padding: 3%;
+        width: 90%;
     }
 
     .field:focus{
@@ -351,8 +352,8 @@ float: right;
     .enviar, .restaurar {
         border-radius: 5px;
         display:inline-block;
-        padding: 10px;
-        margin: 5px;
+        padding: 5%;
+        margin: 6%;
         text-decoration: none;
         text-shadow: 0 1px 0 rgba(255,255,255,0.3);
         box-shadow: 0 1px 1px rgba(0,0,0,0.3);
@@ -369,7 +370,7 @@ float: right;
     [required]{
         border-color:rgb(192, 96, 51);
         box-shadow: 0px 0px 8px rgb(221, 80, 15);
-        margin-left: 3px;
+        margin-left: 3%;
         font-weight: bold;
     }
 
@@ -379,20 +380,21 @@ float: right;
 
     .cuadrado {
         display: inline-block;
-        margin-top: 50px;
+        margin-top: 2%;
     }
     .check {
      box-sizing: content-box;
      display:inline-block;
-     width: 250px;
-     height: 80px;
-     margin: 0 auto;
+     width: 80%;
+     height: 5%;
+     margin: 2%;
     }
     
     fieldset {
       background-color: rgb(255, 255, 255);
       border-radius: 10px;
       border: 2px solid  rgb(136, 145, 19);
+      width: 120%;
     }
 
     legend {
