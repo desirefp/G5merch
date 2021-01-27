@@ -2,19 +2,37 @@
 /* Colocamos una imagen de fondo sin que se repita, ponemos su
 respectivo alto, fuente y tamaño de letra */
 body{
-background-image:url("../imagenes/fondo.jpg");
 font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 16px
+margin: 0%;
+}
+
+p {
+    font-size: 1vw;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+h1 {
+    font-size: 2vw;
+}
+
+h4 {
+    font-size: 1.2vw;
+}
+
+a {
+    text-decoration: none;
 }
 
 .fondoportada {
 
     background-image:url("../Imagenes/fnatic fondo 1.png");
-    background-size: 100% 33%;
+    background-size: 100% 32%;
     background-repeat: no-repeat;
     background-color: rgb(233, 217, 217);
     display: grid;
-    grid-template-rows: 150px 480px 450px 450px 180px;
+    /* grid-template-rows: 150px 480px 450px 450px 180px;  */
+    grid-template-rows: 0.77fr 2.55fr 2.6fr 2.6fr 0.9fr;
     grid-template-columns: 100%;
 }
 
@@ -50,10 +68,12 @@ display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
 align-items: center;
-width: 100%;
+width: 99.5%;
 justify-content: space-between;
 grid-row-start: 1;
 grid-row-end: 2;
+grid-column-start: 1;
+grid-column-end: 5;
 }
 
 /* Aquí termina la cabecera de la página */
@@ -86,6 +106,7 @@ nav li {
  font-weight: bold;
  box-shadow: 2px 2px 5px rgb(4, 151, 156);
  margin-left: 4%;
+
 
 }
 
@@ -129,7 +150,7 @@ nav a:hover{
 }
 
 .area1 :first-child {
-    margin-left: 19%;
+    margin-left: 18%;
 }
 
 h4 {
@@ -155,7 +176,7 @@ h4 {
 
 .area2 > h1 {
     margin-left: 4.5%;
-    margin-block-start: %;
+    margin-block-start: 1.5%;
     margin-block-end: 2%;
 }
 
@@ -221,15 +242,66 @@ de espacio al texto. Usando float hemos puesto los textos en línea. Por último
 /*Seccion de Galería */
 /* Para colocar las imágenes de una forma ordenada hemos usado margin para crear un espacio entre ellas y poder centrar la tabla y las imágenes en la página */
 
-#tableg {margin-left: 7.5%;}
-#gal1 {margin-bottom: 4%;}
-#gal1:hover{transform: scale(1.25,1.25);}
-#tableg {
-    width:100%;
-    margin-left:3%;
+.bodytienda {
+    background-image:url("../Imagenes/fnatic fondo 3.png");
+    background-size: 100% 30%;
+    background-repeat: no-repeat;
+    background-color: rgb(233, 217, 217);
+    display: grid;
+    grid-template-rows: 1fr 4fr 2.1fr 2.1fr 2.1fr 2.1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
 }
-#secgal{width: 95%;}
+.bodytienda > img {margin-bottom: 4%;}
+.bodytienda > img:hover{
+    transform: scale(1.25,1.25);
+}
 
+.bodytienda > hr {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 92%;
+    height: 0.05%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(28, 180, 180);
+    align-self: flex-end;
+    margin-bottom: 2%;
+}
+
+.bodytienda > .fotos1 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.bodytienda > .fotos2 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.bodytienda > .fotos3 {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.bodytienda > .fotos4 {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.bodytienda > div {
+    display: flex;
+    justify-content: space-between;
+}
 /* Termina la sección de Galería */
 /* Seccion de Nosotros */
 /* Centrar la frase y cambiar tamaño de letra a 25px */
@@ -290,17 +362,26 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
 
 footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 98%;
+    width: 99.5%;
     height: 100%;
     background-color:#282a2bd5;
-    border-style:solid;
-    position: bottom, absolute;
+    border-style: solid;
+    position: relative;
+    bottom: 0;
+    align-self: flex-end;
     
 }
 
 .footerportada {
     grid-row-start: 5;
     grid-row-end: 6;
+}
+
+.footergaleria {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 8;
 }
 /*Para la parte que muestra el desarrollador y fecha, hemos hecho una lista no ordenada, ajustado el contenido a lo que queriamos con box-sizing,
  quitado el circulo negro de la lista, metido un float para que fuera a la izquierda y por último, puesto su respectivo ancho y margen arriba.*/

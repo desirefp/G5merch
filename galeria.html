@@ -20,18 +20,17 @@ de nuestra pagina en nuestro codigo encontraras más información sobre nosotros
 y otra de un usuario. En el menú vamos a añadir una lista con las distintas secciones de la pagina. Por último, en el footer vamos a escribir 
 quienes son los creadores de la web y cuando se creo. Igual que en la cabecera añadiriamos dos fotos por un lado, un telefono y 
 por otro lado, el gmail. -->
-<body>
+<body class="bodytienda">
   <header>
     <!-- Header para mostrar principalmente el logo y el nombre de la empresa, añadidos dos iconos para añadir en un futuro un login y un carrito de la comprar para registrar los productos que se quieren comprar -->
     <div>
-        <a href="file:///C:/G5merch/G5merch/formularioG5.html"><img src="imagenes/usuario.png" width="50" height="50"" /> </a>
-        <img src="imagenes/carro.png" width="50" height="50"/> 
+        <a href="formularioG5.html"><img src="imagenes/usuario.png" width="40%" height="100%"" /> </a>
+        <img src="imagenes/carro.png" width="40%" height="100%"/> 
     </div>
-    <img src="imagenes/Logo letras blanco.png" width="10%" height="6.3%"/> 
+    <img src="imagenes/Logo letras blanco.png" width="10%" height="85%"/> 
     
 
     
-
     <!-- Para hacer el menú hemos utilizado una lista no ordenada y para enlazar las secciones de la página hemos puesto diversos href -->
     <nav>
         <ul class="1">
@@ -41,42 +40,41 @@ por otro lado, el gmail. -->
             <li><a href="nosotros.html">Nosotros</a></li>
         </ul>
     </nav>
-</header><br>
-<section id="secgal">
+</header>    
+
 <!-- Para colocar las imagenes de una forma ordenada usamos table para crear una tabla y colocar las imagenes en las filas y columnas -->
-    <table id=tableg>
-        <caption> </caption>
-          <tr>
-            <td></td>
-            <th><img id=gal1 src="imagenes/galeria 1.png" width="250" height="180"></th>
-            <th><img id=gal1 src="imagenes/galeria 2.png" width="250" height="200"></th>
-            <th><img id=gal1 src="imagenes/galeria 3.png" width="280" height="220"></th>
-            <th><img id=gal1 src="imagenes/galeria 13.png" width="280" height="220"><br></th>
-          </tr>
-          <tr>
-            <td></td>
-            <th><img id=gal1 src="imagenes/galeria 4.png" width="250" height="220"></th>
-            <th><img id=gal1 src="imagenes/galeria 5.png" width="300" height="220"></th>
-            <th><img id=gal1 src="imagenes/galeria 6.png" width="300" height="200"></th>
-            <th><img id=gal1 src="imagenes/galeria 14.png" width="230" height="220"><br></th>
-          </tr>
-          <tr>
-            <td></td>
-            <th><img id=gal1 src="imagenes/galeria 7.png" width="250" height="220"></th>
-            <th><img id=gal1 src="imagenes/galeria 8.png" width="250" height="220"></th>
-            <th><img id=gal1 src="imagenes/galeria 9.png" width="300" height="220"></th>
-            <th><img id=gal1 src="imagenes/galeria 15.png" width="280" height="220"></th>
-          </tr>
-          <tr>
-            <td></td>
-            <th><img id=gal1 src="imagenes/galeria 10.png" width="250" height="220"></th>
-            <th><img id=gal1 src="imagenes/galeria 11.jpg" width="260" height="220"></th>
-            <th><img id=gal1 src="imagenes/galeria 12.jpg" width="270" height="220"></th>
-            <th><img id=gal1 src="imagenes/galeria 16.jpg" width="280" height="220"></th>
-            </tr>
+
+<hr>
+
+<div class="fotos1">
+<img src="imagenes/galeria 1.png" width="250" height="180">
+<img src="imagenes/galeria 2.png" width="250" height="200">
+<img src="imagenes/galeria 3.png" width="280" height="220">
+<img src="imagenes/galeria 13.png" width="280" height="220">
+</div>
+     
+<div class="fotos2">
+<img src="imagenes/galeria 4.png" width="250" height="220">
+<img src="imagenes/galeria 5.png" width="300" height="220">
+<img src="imagenes/galeria 6.png" width="300" height="200">
+<img src="imagenes/galeria 14.png" width="230" height="220">
+</div>
+
+<div class="fotos3">
+<img src="imagenes/galeria 7.png" width="250" height="220">
+<img src="imagenes/galeria 8.png" width="250" height="220">
+<img src="imagenes/galeria 9.png" width="300" height="220">
+<img src="imagenes/galeria 15.png" width="280" height="220">
+</div>
+
+<div class="fotos4">         
+<img src="imagenes/galeria 10.png" width="250" height="220">
+<img src="imagenes/galeria 11.jpg" width="260" height="220">
+<img src="imagenes/galeria 12.jpg" width="270" height="220">
+<img src="imagenes/galeria 16.jpg" width="280" height="220">
+</div>            
           
-    </table>
-</section>
+
   
 <!-- Audio de la página-->
 <audio src="audios/musicagaleria.mp3"autoplay loop></audio>
@@ -84,33 +82,11 @@ por otro lado, el gmail. -->
 <!-- En el footer hemos puesto quien ha diseñado y desarrollado la página y fecha de creación en cursiva. 
    A la derecha hemos colocado cuadro fotos: dos son para contactarnos por teléfono o email y las otras dos, son para contactarnos por Instagram o Twitter. 
    En la parte de las dos redes sociales, hemos colocado href para dirigirte a las respectivas páginas y el ancho y alto de las fotos -->
-<footer>
-  <ul id="lfooter">
 
- 
-   <li><i>Desarrollado y diseñado por G5_1AS3</i> </li>
+<footer class="footergaleria">
+
   
-   <li> <i>Fecha de creación: 20/10/2020</i></li> 
 
-  </ul>
-<table id="tablafooter">
-  <tr><td> 
-       <img src="imagenes/telefono.png" width="30" height="30" />
-   </td></tr>
-
-  <tr><td>
-      <img src="imagenes/correo.png" width="30" height="30" />
-   </td></tr>
-
-<tr><td> <a href="https://www.instagram.com/?hl=es">
-        <img src="imagenes/insta.png" width="30" height="30"></a>
-</td></tr>
-   
-<tr><td><a href="https://twitter.com/?hl=es">
-        <img src="imagenes/twitter.png" width="30" height="30"></a>
-</td></tr>
-
-</table>       
    
 </footer>
 </body>
