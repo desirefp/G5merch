@@ -10,11 +10,11 @@ font-size: 16px
 .fondoportada {
 
     background-image:url("../Imagenes/fnatic fondo 1.png");
-    background-size: 100% 31%;
+    background-size: 100% 33%;
     background-repeat: no-repeat;
     background-color: rgb(233, 217, 217);
     display: grid;
-    grid-template-rows: 180px 200px 400px 400px 300px;
+    grid-template-rows: 150px 480px 450px 450px 180px;
     grid-template-columns: 100%;
 }
 
@@ -26,16 +26,17 @@ src: url('AlegreyaSC-Black.ttf');
 }
 
 header > div {
-justify-self: flex-end;
 order: 3;
 margin-right: 2.5%;
+box-sizing: border-box;
+width: 15%;
+height: 50%;
 
 }
 
 header > img {
     margin-left: 2.5%;
 }
-
 
 /* En la cabecera hemos puesto un borde sólido, posicion relativa,
 una imagen como fondo sin repeticiones y tipo de letra Verdana*/
@@ -111,29 +112,20 @@ nav a:hover{
 
 /*Sección de Portada*/
 /*Aquí empezamos a dar márgenes a las fotos, y a los respectivos textos y títulos para que estén alineados*/
-#secp {
-    margin-bottom: 10%;
-    margin-top: 33%;
 
-}
 
 .area1 {
 
     grid-row-start: 2;
     grid-row-end: 3;
-}
-
-section >div {
-
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    
+    align-items: flex-end;
 }
+
 
 .area1 > img{
    width: 3%;
-   height: 60%;
+   height: 8%;
 }
 
 .area1 :first-child {
@@ -143,13 +135,16 @@ section >div {
 h4 {
     margin-left: 2%;
     margin-right: 2%;
+    margin-block-start: 0;
+    margin-block-end: 1%;
 }
+
 
 .area2{
 
     grid-row-start: 3;
     grid-row-end: 4;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .area2 > img{
@@ -160,6 +155,8 @@ h4 {
 
 .area2 > h1 {
     margin-left: 4.5%;
+    margin-block-start: %;
+    margin-block-end: 2%;
 }
 
 .area2 > p {
@@ -182,6 +179,8 @@ h4 {
 
 .area3 > h1 {
     margin-left: 4.5%;
+    margin-block-start: 0;
+    margin-block-end: 2%;
 }
 
 
@@ -292,10 +291,10 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
 footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 98%;
-    height: 25%;
+    height: 100%;
     background-color:#282a2bd5;
     border-style:solid;
-    position: absolute;
+    position: bottom, absolute;
     
 }
 
