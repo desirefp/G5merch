@@ -32,7 +32,7 @@ a {
     background-color: rgb(233, 217, 217);
     display: grid;
     /* grid-template-rows: 150px 480px 450px 450px 180px;  */
-    grid-template-rows: 0.77fr 2.55fr 2.6fr 2.6fr 0.9fr;
+    grid-template-rows: 0.72fr 2.57fr 2.6fr 2.6fr 0.9fr;
     grid-template-columns: 100%;
 }
 
@@ -242,27 +242,27 @@ de espacio al texto. Usando float hemos puesto los textos en línea. Por último
 /*Seccion de Galería */
 /* Para colocar las imágenes de una forma ordenada hemos usado margin para crear un espacio entre ellas y poder centrar la tabla y las imágenes en la página */
 
-.bodytienda {
+.bodygaleria {
     background-image:url("../Imagenes/fnatic fondo 3.png");
     background-size: 100% 30%;
     background-repeat: no-repeat;
     background-color: rgb(233, 217, 217);
     display: grid;
-    grid-template-rows: 1fr 4fr 2.1fr 2.1fr 2.1fr 2.1fr 1fr;
+    grid-template-rows: 1fr 4fr 2fr 2fr 2fr 2fr 1.2fr;
     grid-template-columns: 25% 25% 25% 25%;
 }
-.bodytienda > img {margin-bottom: 4%;}
-.bodytienda > img:hover{
+.bodygaleria > img {margin-bottom: 4%;}
+.bodygaleria > img:hover{
     transform: scale(1.25,1.25);
 }
 
-.bodytienda > hr {
+.bodygaleria > hr {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 5;
     width: 92%;
-    height: 0.05%;
+    height: 0.03%;
     border-style: solid;
     border-width: 2px;
     border-color: rgb(28, 180, 180);
@@ -270,41 +270,47 @@ de espacio al texto. Usando float hemos puesto los textos en línea. Por último
     margin-bottom: 2%;
 }
 
-.bodytienda > .fotos1 {
+.bodygaleria > .fotos1 {
+    margin-top: 1%;
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 5;
 }
 
-.bodytienda > .fotos2 {
+.bodygaleria > .fotos2 {
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end: 5;
 }
 
-.bodytienda > .fotos3 {
+.bodygaleria > .fotos3 {
     grid-row-start: 5;
     grid-row-end: 6;
     grid-column-start: 1;
     grid-column-end: 5;
 }
 
-.bodytienda > .fotos4 {
+.bodygaleria > .fotos4 {
     grid-row-start: 6;
     grid-row-end: 7;
     grid-column-start: 1;
     grid-column-end: 5;
 }
 
-.bodytienda > div {
+.bodygaleria > div {
     display: flex;
     justify-content: space-between;
 }
 /* Termina la sección de Galería */
 /* Seccion de Nosotros */
 /* Centrar la frase y cambiar tamaño de letra a 25px */
+
+.bodynosotros {
+    background-color: rgb(233, 217, 217);
+}
+
 #fraseempresa {
     text-align: center;
     font-size: 25px;
@@ -337,23 +343,44 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
 
 /* Termina la sección de Nosotros */
 /*Sección de Tienda*/
-#tproductos{
+
+.bodytienda {
+    background-color: rgb(233, 217, 217);
+}
+
+table{
     width: 80%;
     margin-left: 10%;
     border-color:black;
     margin-top: 5%;
+    
 }
-#tabla{
-    background: radial-gradient(circle, rgb(182, 187, 120) 0%, rgb(152, 158, 66) 100%);
-}
-#tabla2{
-    font-weight:bold;
-    text-align:center;
+tr{
+    background: radial-gradient(circle, rgba(86, 88, 88, 0.815) 0%, rgba(32, 32, 32, 0.753) 100%);
+    
+    
 }
 
-#tabla2{
-    background: linear-gradient(0deg, rgb(129, 134, 35) 0%, rgb(151, 158, 25) 100%);
+th {
+    border-style: solid;
+    color: white;
+    border-color: black;
 }
+
+
+
+td{
+    
+    text-align:center;
+    background: linear-gradient(0deg, rgb(12, 152, 156) 0%, rgb(11, 241, 241) 100%);
+    border-style: solid;
+}
+
+td:first-child {
+    background: linear-gradient(0deg, rgb(10, 116, 116) 0%, rgb(30, 165, 165) 100%);
+    font-weight:bold;
+}
+
 /*Termina la sección de Tienda*/
 /* Terminamos con las secciones*/
 
