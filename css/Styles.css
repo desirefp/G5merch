@@ -32,7 +32,7 @@ a {
     background-color: rgb(233, 217, 217);
     display: grid;
     /* grid-template-rows: 150px 480px 450px 450px 180px;  */
-    grid-template-rows: 0.72fr 2.57fr 2.6fr 2.6fr 0.9fr;
+    grid-template-rows: 150px 2.57fr 2.6fr 2.6fr 180px;
     grid-template-columns: 100%;
 }
 
@@ -244,11 +244,11 @@ de espacio al texto. Usando float hemos puesto los textos en línea. Por último
 
 .bodygaleria {
     background-image:url("../Imagenes/fnatic fondo 3.png");
-    background-size: 100% 30%;
+    background-size: 100% 33%;
     background-repeat: no-repeat;
     background-color: rgb(233, 217, 217);
     display: grid;
-    grid-template-rows: 1fr 4fr 2fr 2fr 2fr 2fr 1.2fr;
+    grid-template-rows: 150px 2.3fr 1fr 1fr 1fr 1.3fr 180px;
     grid-template-columns: 25% 25% 25% 25%;
 }
 .bodygaleria > img {margin-bottom: 4%;}
@@ -309,6 +309,8 @@ de espacio al texto. Usando float hemos puesto los textos en línea. Por último
 
 .bodynosotros {
     background-color: rgb(233, 217, 217);
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
 #fraseempresa {
@@ -346,14 +348,39 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
 
 .bodytienda {
     background-color: rgb(233, 217, 217);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 1fr 180px;
 }
+
+.bodytienda > header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.bodytienda > table {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.bodytienda > footer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
 
 table{
     width: 80%;
     margin-left: 10%;
     border-color:black;
     margin-top: 5%;
-    
+    display: block;
 }
 tr{
     background: radial-gradient(circle, rgba(86, 88, 88, 0.815) 0%, rgba(32, 32, 32, 0.753) 100%);
@@ -380,6 +407,13 @@ td:first-child {
     background: linear-gradient(0deg, rgb(10, 116, 116) 0%, rgb(30, 165, 165) 100%);
     font-weight:bold;
 }
+
+.bodytienda > article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
 
 /*Termina la sección de Tienda*/
 /* Terminamos con las secciones*/
