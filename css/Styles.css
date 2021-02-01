@@ -232,6 +232,9 @@ h4 {
 .bodygaleria img:hover{
     transform: scale(1.4,1.4);
 }
+.bodygaleria img:hover{
+    filter: opacity(.5);
+}
 
 .bodygaleria > hr {
     grid-row-start: 2;
@@ -291,6 +294,10 @@ h4 {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.bodynosotros h4 {
+    text-align: center;
+}
+
 .bodynosotros > header {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -326,6 +333,14 @@ video {
     margin-bottom: 4%;
     width: 90%;
     justify-self: center;
+}
+
+.bodynosotros > section{
+    background: radial-gradient(circle, rgba(160,211,215,1) 0%, rgba(28,173,167,1) 100%);
+}
+
+.bodynosotros h1 {
+    background:radial-gradient(circle, rgba(160,211,215,1) 0%, rgba(28,173,167,1) 100%);;
 }
 
 .bodynosotros > article{
@@ -505,7 +520,7 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 99.5%;
     height: 100%;
-    background-color:#282a2bd5;
+    background-color:#282a2bb9;
     border-style: solid;
     position: relative;
     bottom: 0;
@@ -532,6 +547,7 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
 
 
 /* Terminamos el footer */
+<<<<<<< HEAD
     /* Empezamos con el Formulario*/
 
 
@@ -544,6 +560,9 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
     }
 
 
+=======
+/* Empezamos con el Formulario*/
+>>>>>>> af0b4e011f532fd447612691c23a70c567b3913b
     form {
         background-color: rgba(22, 21, 21, 0.63);
         padding: 10%;
@@ -641,6 +660,7 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
+<<<<<<< HEAD
         grid-row-end: 3;
     }
     
@@ -651,3 +671,7 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
         grid-row-end: 4;
     }
     
+=======
+    }
+/* Terminamos formulario*/
+>>>>>>> af0b4e011f532fd447612691c23a70c567b3913b
