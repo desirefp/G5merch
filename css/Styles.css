@@ -732,3 +732,126 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
     
     
 /* Terminamos formulario*/
+
+@media screen and (max-width: 768px) {
+    /*Header tablet*/
+    header nav li {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px;
+        background-image:linear-gradient(90deg, rgb(82, 243, 243) 5%, rgb(21, 201, 201) 74%);
+        border:2px solid rgb(255, 255, 255);
+        border-radius: 40px 10px;
+        width: 100px;
+        height: 20px;
+        text-align:center;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px rgb(4, 151, 156);
+        margin-left: 2%;
+       
+       }
+
+    header nav > ul {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        padding-inline-start: 0;
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    header nav{
+        width: 40%;
+        height: 80%;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-self: flex-end;
+        margin-right: 5%;
+    }
+
+    header > div {
+        order: 3;
+        box-sizing: border-box;
+        width: 110px;
+        height: 70px;
+        }
+
+    header nav a {
+        text-decoration:none;
+        font-size: 1.6vw;
+        color: rgb(0, 0, 0);
+        
+        }
+
+    header > div img {
+        width: 50px;
+        height: 50px;
+            
+            } 
+
+    #inicio {
+        width: 110px;
+        height: 100px;
+    }
+    
+    /*Fin header tablet*/
+
+    /*Footer tablet*/
+
+    footer > div {
+        width: 140px;
+        height: 120px;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-self: flex-end;
+        margin-right: 2%;
+        margin-top: 1%;
+        
+    }
+    
+    footer a h1 {
+        justify-self: flex-start;
+        color:rgb(255, 255, 255);
+        font-family: TipoTitulo;
+        font-size: 50px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        width: 35%;
+        margin-left: 15%;
+    }
+    
+    footer nav {
+        width: 600px;
+        margin-left: 4%;
+        
+    }
+    
+    footer nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    footer nav ul li {
+        padding: 8px;
+        margin-left: 5%;
+        border-style: solid;
+        border-radius: 15px 15px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(25, 241, 230);
+        text-decoration: black;
+        width: 100px;
+        margin-top: 1%;
+        text-align: center;
+    }
+
+    footer img {
+        width: 40px;
+        height: 40px;
+        display:flex;
+        
+    }
+    /*Fin footer tablet*/
+    }
