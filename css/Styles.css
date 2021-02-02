@@ -27,12 +27,12 @@ a {
 .fondoportada {
 
     background-image:url("../Imagenes/fnatic fondo 1.png");
-    background-size: 100% 32%;
+    background-size: 100% 33%;
     background-repeat: no-repeat;
     background-color: rgb(224, 223, 223);
     display: grid;
     /* grid-template-rows: 150px 480px 450px 450px 180px;  */
-    grid-template-rows: 150px 2.57fr 2.6fr 2.6fr 180px;
+    grid-template-rows: 150px 2.57fr 2.6fr 2.6fr 140px;
     grid-template-columns: 100%;
 }
 
@@ -221,11 +221,11 @@ h4 {
 
 .bodygaleria {
     background-image:url("../Imagenes/fnatic fondo 3.png");
-    background-size: 100% 33%;
+    background-size: 100% 34%;
     background-repeat: no-repeat;
     background-color:  rgb(224, 223, 223);
     display: grid;
-    grid-template-rows: 150px 2.3fr 1fr 1fr 1fr 1.3fr 180px;
+    grid-template-rows: 150px 2.3fr 1fr 1fr 1fr 1.3fr 140px;
     grid-template-columns: 25% 25% 25% 25%;
 }
 .bodygaleria > img {margin-bottom: 4%;}
@@ -289,7 +289,7 @@ h4 {
 .bodynosotros {
     background-color: rgb(224, 223, 223);
     display: grid;
-    grid-template-rows: 150px 2fr 1.5fr 0.5fr 180px;
+    grid-template-rows: 150px 2fr 1.5fr 0.5fr 140px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -338,7 +338,7 @@ video {
     background: radial-gradient(circle, rgba(160,211,215,1) 0%, rgba(28,173,167,1) 100%);
 }
 
-.bodynosotros h1 {
+.bodynosotros > h1 {
     background:radial-gradient(circle, rgba(160,211,215,1) 0%, rgba(28,173,167,1) 100%);;
 }
 
@@ -441,7 +441,7 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
     background-color:  rgb(224, 223, 223);
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px 1fr 180px;
+    grid-template-rows: 150px 1fr 140px;
 }
 
 .bodytienda > header {
@@ -539,31 +539,54 @@ footer {
 }
 
 footer > div {
-    width: 180px;
-    height: 160px;
+    width: 140px;
+    height: 130px;
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-self: flex-end;
+    margin-right: 6%;
+    margin-top: 2%;
     
 }
 
-footer > a h1 {
+footer a h1 {
     justify-self: flex-start;
     color:rgb(255, 255, 255);
     font-family: TipoTitulo;
-    font-size: 100px;
+    font-size: 60px;
     margin-block-start: 0;
     margin-block-end: 0;
-    width: 500px;
+    width: 35%;
+    margin-left: 15%;
 }
 
-footer > nav {
-    width: 750px;
-    margin: 45px;
-    display:flex;
+footer nav {
+    width: 700px;
+    margin-left: 4%;
+    
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
     flex-wrap: wrap;
 }
+
+footer nav ul li {
+    padding: 8px;
+    margin-left: 5%;
+    border-style: solid;
+    border-radius: 15px 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 241, 230);
+    text-decoration: black;
+}
+
+footer nav ul a {
+    color:black;
+}
+
 /*Para la parte que muestra el desarrollador y fecha, hemos hecho una lista no ordenada, ajustado el contenido a lo que queriamos con box-sizing,
  quitado el circulo negro de la lista, metido un float para que fuera a la izquierda y por último, puesto su respectivo ancho y margen arriba.*/
 
@@ -577,7 +600,7 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
 
     .bodyform {
         display: grid;
-        grid-template-rows: 150px 1fr 180px;
+        grid-template-rows: 150px 1fr 140px;
         grid-template-columns: 50% 50%;
         background-color:  rgb(224, 223, 223);
         
