@@ -39,7 +39,7 @@ a {
 /* Aquí empieza la cabecera de la página */
 /* El tipo de letra que vamos a utilizar para el nombre de la empresa*/
 @font-face {
-font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-family: TipoTitulo;
 src: url('AlegreyaSC-Black.ttf');
 }
 
@@ -79,7 +79,7 @@ grid-column-end: 5;
 /* Aquí termina la cabecera de la página */
 /* Empezamos con el menú*/
 /* Cambiamos el tamaño del texto y quitamos decoración*/
-nav a {
+header nav a {
 text-decoration:none;
 font-size: 1.1vw;
 color: rgb(0, 0, 0);
@@ -89,12 +89,12 @@ color: rgb(0, 0, 0);
 colocamos como fondo una imagen, ponemos sombras, bordes y tipo de borde
 centramos el texto y colocamos su respectivo ancho y alto*/
 
-nav  {
+header nav  {
     width: 70%;
     margin-left: 5%;
 }
 
-nav li {
+header nav li {
  font-family: Verdana, Geneva, Tahoma, sans-serif;
  padding: 8px;
  background-image:linear-gradient(90deg, rgb(82, 243, 243) 5%, rgb(21, 201, 201) 74%);
@@ -111,7 +111,7 @@ nav li {
 }
 
 
-nav > ul {
+header nav > ul {
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
@@ -119,12 +119,12 @@ nav > ul {
     flex-wrap: wrap;
 }
 
-ul {
+header ul {
     list-style: none;
 }
 
 /* Para añadirle animación al menú*/
-nav a:hover{
+header nav a:hover{
     color:rgb(255, 255, 255);
 }
 /* Terminamos con el menú*/
@@ -229,10 +229,9 @@ h4 {
     grid-template-columns: 25% 25% 25% 25%;
 }
 .bodygaleria > img {margin-bottom: 4%;}
-.bodygaleria img:hover{
+
+.bodygaleria > div img:hover {
     transform: scale(1.4,1.4);
-}
-.bodygaleria img:hover{
     filter: opacity(.5);
 }
 
@@ -351,7 +350,6 @@ video {
     
 }
 
-
 .bodynosotros:nth-child(3) {
     grid-row-start: 3;
     grid-row-end: 4;
@@ -390,8 +388,6 @@ de espacio al texto. Usando float hemos puesto los textos en línea. Por último
     margin-left: 5%;
     
 }
-
-
 
 /*Título de la sección de preguntas y respuestas. Cambio de fuente a Verdana, url a para poner la fuente Alegreya, con float moverlo a la izquierda,
 cambio de letra a 30px y margen por debajo de un 1% */
@@ -518,13 +514,15 @@ td:first-child {
 
 footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
     width: 99.5%;
     height: 100%;
-    background-color:#282a2bb9;
+    background-color:#282a2bab;
     border-style: solid;
     position: relative;
     bottom: 0;
-    align-self: flex-end;
+    justify-content: space-between;
+    align-items: center;
     
 }
 
@@ -538,6 +536,33 @@ footer {
     grid-column-end: 5;
     grid-row-start: 7;
     grid-row-end: 8;
+}
+
+footer > div {
+    width: 180px;
+    height: 160px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    
+}
+
+footer > a h1 {
+    justify-self: flex-start;
+    color:rgb(255, 255, 255);
+    font-family: TipoTitulo;
+    font-size: 100px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width: 500px;
+}
+
+footer > nav {
+    width: 750px;
+    margin: 45px;
+    display:flex;
+    flex-wrap: wrap;
 }
 /*Para la parte que muestra el desarrollador y fecha, hemos hecho una lista no ordenada, ajustado el contenido a lo que queriamos con box-sizing,
  quitado el circulo negro de la lista, metido un float para que fuera a la izquierda y por último, puesto su respectivo ancho y margen arriba.*/
