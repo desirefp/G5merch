@@ -29,7 +29,7 @@ a {
     background-image:url("../Imagenes/fnatic fondo 1.png");
     background-size: 100% 32%;
     background-repeat: no-repeat;
-    background-color: rgb(233, 217, 217);
+    background-color: rgb(224, 223, 223);
     display: grid;
     /* grid-template-rows: 150px 480px 450px 450px 180px;  */
     grid-template-rows: 150px 2.57fr 2.6fr 2.6fr 180px;
@@ -47,8 +47,8 @@ header > div {
 order: 3;
 margin-right: 2.5%;
 box-sizing: border-box;
-width: 15%;
-height: 50%;
+width: 180px;
+height: 70px;
 
 }
 
@@ -81,7 +81,7 @@ grid-column-end: 5;
 /* Cambiamos el tamaño del texto y quitamos decoración*/
 header nav a {
 text-decoration:none;
-font-size:14px;
+font-size: 1.1vw;
 color: rgb(0, 0, 0);
 
 } 
@@ -96,12 +96,12 @@ header nav  {
 
 header nav li {
  font-family: Verdana, Geneva, Tahoma, sans-serif;
- padding: 1%;
+ padding: 8px;
  background-image:linear-gradient(90deg, rgb(82, 243, 243) 5%, rgb(21, 201, 201) 74%);
  border:2px solid rgb(255, 255, 255);
  border-radius: 40px 10px;
- width: 15%;
- height: 1%;
+ width: 130px;
+ height: 20px;
  text-align:center;
  font-weight: bold;
  box-shadow: 2px 2px 5px rgb(4, 151, 156);
@@ -116,7 +116,7 @@ header nav > ul {
     margin-block-end: 0;
     padding-inline-start: 0;
     display:flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 header ul {
@@ -223,7 +223,7 @@ h4 {
     background-image:url("../Imagenes/fnatic fondo 3.png");
     background-size: 100% 33%;
     background-repeat: no-repeat;
-    background-color: rgb(233, 217, 217);
+    background-color:  rgb(224, 223, 223);
     display: grid;
     grid-template-rows: 150px 2.3fr 1fr 1fr 1fr 1.3fr 180px;
     grid-template-columns: 25% 25% 25% 25%;
@@ -287,7 +287,7 @@ h4 {
 /* Centrar la frase y cambiar tamaño de letra a 25px */
 
 .bodynosotros {
-    background-color: rgb(233, 217, 217);
+    background-color: rgb(224, 223, 223);
     display: grid;
     grid-template-rows: 150px 2fr 1.5fr 0.5fr 180px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -318,7 +318,7 @@ video {
     grid-column-start: 1;
     grid-column-end: 4;
     width: 100%;
-    height: 85%;
+    height: 84%;
     z-index: -100;
     object-fit: cover;
 }
@@ -405,9 +405,9 @@ cambio de letra a 30px y margen por debajo de un 1% */
     grid-row-start: 4;
     grid-row-end: 5;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     border-style: solid;
-    width: 55%;
+    width: 78%;
     height: 90%;
     margin-left: 1.5%;
 }
@@ -438,7 +438,7 @@ sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
 /*Sección de Tienda*/
 
 .bodytienda {
-    background-color: rgb(233, 217, 217);
+    background-color:  rgb(224, 223, 223);
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 150px 1fr 180px;
@@ -572,9 +572,24 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
 
 
 /* Terminamos el footer */
+<<<<<<< HEAD
+    /* Empezamos con el Formulario*/
+
+
+    .bodyform {
+        display: grid;
+        grid-template-rows: 150px 1fr 180px;
+        grid-template-columns: 50% 50%;
+        background-color:  rgb(224, 223, 223);
+        
+    }
+
+
+=======
 /* Empezamos con el Formulario*/
+>>>>>>> af0b4e011f532fd447612691c23a70c567b3913b
     form {
-        background-color: rgb(160, 199, 189);
+        background-color: rgba(22, 21, 21, 0.63);
         padding: 10%;
         padding-right: 25%;
         margin: 10%;
@@ -610,7 +625,7 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
 
     }
     .enviar {
-        background-color: rgb(48, 224, 48);
+        background-color: rgb(87, 240, 41);
     }
 
     .restaurar{
@@ -618,14 +633,14 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
     
     }
     [required]{
-        border-color:rgb(192, 96, 51);
-        box-shadow: 0px 0px 8px rgb(221, 80, 15);
+        border-color:rgb(0, 0, 0);
+        box-shadow: 0px 0px 8px rgb(15, 221, 221);
         margin-left: 3%;
         font-weight: bold;
     }
 
     input:invalid:required {
-        background-image: linear-gradient(to right, rgba(168, 99, 53, 0.5), rgba(178, 196, 20, 0.555));
+        background-image: linear-gradient(to right, rgba(53, 181, 190, 0.5), rgba(14, 110, 117, 0.555));
       }
 
     .cuadrado {
@@ -641,14 +656,14 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
     }
     
     fieldset {
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(224, 223, 223);
       border-radius: 10px;
-      border: 2px solid  rgb(136, 145, 19);
+      border: 2px solid  rgb(0, 0, 0);
       width: 120%;
     }
 
     legend {
-        background-color:  rgb(136, 145, 19);
+        background-color: rgb(56, 56, 58);
         color: white;
     }
 
@@ -656,18 +671,32 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
         display: block
     }
 
-    .grid{
-        margin-left:10%;
-        display: grid;
-        grid-template-columns:45% 45% ;
-    }
 
     .a{
         grid-column-start: 2;
+        grid-column-end: 3;
         grid-row-start: 2;
+        grid-row-end: 3;
     }
+    
+        
 
-    .b{
+    .b {
+        grid-column-start: 1;
+        grid-column-end: 2;
         grid-row-start: 2;
+<<<<<<< HEAD
+        grid-row-end: 3;
+    }
+    
+    .bodyform footer {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    
+=======
     }
 /* Terminamos formulario*/
+>>>>>>> af0b4e011f532fd447612691c23a70c567b3913b
