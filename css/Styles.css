@@ -595,6 +595,15 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
         font-size: 14px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+
+    form > h4{
+        display:flex;
+        justify-content: flex-end;
+        width: 140%;
+        height: 2%;
+        margin-bottom: 2%;
+        color:rgb(245, 245, 245);
+    }
     
     input, textarea, select {
         border: 0;
@@ -668,6 +677,12 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
         display: block
     }
 
+    .obligatorio:after{
+        content: "*";
+        margin-left: 3px;
+        color: red;
+        font-weight: bold;
+    }
 
     .a{
         grid-column-start: 2;
