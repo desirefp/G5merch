@@ -544,7 +544,6 @@ footer > div {
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-self: flex-end;
     margin-right: 6%;
     margin-top: 2%;
     
@@ -735,6 +734,8 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
 
 @media screen and (max-width: 768px) {
     /*Header tablet*/
+
+@media screen and (max-width: 600px) {
     header nav li {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         padding: 5px;
@@ -811,11 +812,54 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
         
     }
     
+        height: 12px;
+        text-align:center;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px rgb(4, 151, 156);
+        margin-left: 10%;
+        margin-top: 4%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+   }
+
+   header nav  {
+    width: 40%;
+    margin-left: 8%;
+}
+
+header > img {
+    margin-left: 5%;
+}
+
+header nav a {
+    font-size: 1.5vw;
+    } 
+
+    p {
+        font-size: 1.5vw;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+    
+    h1 {
+        font-size: 2.5vw;
+    }
+    
+    h4 {
+        font-size: 1.8vw;
+    }
+    
+
+
+
+
     footer a h1 {
         justify-self: flex-start;
         color:rgb(255, 255, 255);
         font-family: TipoTitulo;
         font-size: 50px;
+        font-size: 7vw;
         margin-block-start: 0;
         margin-block-end: 0;
         width: 35%;
@@ -825,6 +869,7 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
     footer nav {
         width: 600px;
         margin-left: 4%;
+        width: 260px;
         
     }
     
@@ -836,6 +881,7 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
     
     footer nav ul li {
         padding: 8px;
+        padding: 4px;
         margin-left: 5%;
         border-style: solid;
         border-radius: 15px 15px;
@@ -854,4 +900,23 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
         
     }
     /*Fin footer tablet*/
+        margin-top: 5%;
+        width: 60px;
+    }
+    footer nav a {
+        font-size: 2vw;
+    }
+    footer div img {
+        width: 35px;
+        height: 35px;
+    }
+
+    footer > div {
+        width: 90px;
+        height: 90px;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-right: 6%;
+        margin-top: 2%; 
     }
