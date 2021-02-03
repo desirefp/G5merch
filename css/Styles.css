@@ -282,9 +282,10 @@ h4 {
     justify-content: space-between;
 }
 /* Termina la sección de Galería */
-/* Seccion de Nosotros */
-/* Centrar la frase y cambiar tamaño de letra a 25px */
 
+/* Seccion de Nosotros */
+
+/*Grid distibuido en 3 columnas y 5 filas de diferentes tamaños */
 .bodynosotros {
     background-color: rgb(224, 223, 223);
     display: grid;
@@ -296,13 +297,13 @@ h4 {
     text-align: center;
 }
 
+/*Distribución del header, video, h4 y footer en el grid*/
 .bodynosotros > header {
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 4;
 }
-
 
 .bodynosotros > footer {
     grid-row-start: 5;
@@ -341,6 +342,7 @@ video {
     background:radial-gradient(circle, rgba(160,211,215,1) 0%, rgba(28,173,167,1) 100%);;
 }
 
+/*Distribución del grid de los articulos*/
 .bodynosotros > article{
     width: 90%;
     height: 90%;
@@ -411,7 +413,7 @@ cambio de letra a 30px y margen por debajo de un 1% */
     margin-left: 1.5%;
 }
 /* Alineación de texto a la izquierda, con su ancho, sin margen ni padding, float a la derecha,
-sin circulos negros de lista no ordenda y tamaño de letra de 20px*/
+sin circulos negros de lista no ordenada. Distribución grid del section y h1*/
 .bodynosotros section ul {
     text-align: left;
     width: 100%;
@@ -593,9 +595,10 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
 
 
 /* Terminamos el footer */
-    /* Empezamos con el Formulario*/
 
+/* Empezamos con el Formulario*/
 
+/*El grid esta distribuido en 2 columnas y 3 filas*/
     .bodyform {
         display: grid;
         grid-template-rows: 150px 1fr 140px;
@@ -604,8 +607,6 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
         
     }
 
-
-/* Empezamos con el Formulario*/
     form {
         background-color: rgba(22, 21, 21, 0.63);
         padding: 10%;
@@ -616,7 +617,7 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
         font-size: 14px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-
+/*h4 que indica el * de los campos obligatorios*/
     form > h4{
         display:flex;
         justify-content: flex-end;
@@ -641,6 +642,7 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
         border-color: rgb(255, 255, 255);
     }
 
+/*Botón de enviar y eliminar*/
     .enviar, .restaurar {
         border-radius: 5px;
         display:inline-block;
@@ -659,6 +661,7 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
         background-color: rgb(219, 43, 43);
     
     }
+/*Modificación del atributo required*/
     [required]{
         border-color:rgb(0, 0, 0);
         box-shadow: 0px 0px 8px rgb(15, 221, 221);
@@ -669,7 +672,7 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
     input:invalid:required {
         background-image: linear-gradient(to right, rgba(53, 181, 190, 0.5), rgba(14, 110, 117, 0.555));
       }
-
+/*Modificación de los checkbox*/
     .cuadrado {
         display: inline-block;
         margin-top: 2%;
@@ -697,7 +700,7 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
     .botones {
         display: block
     }
-
+/*Asterisco en los campos obligatorios*/
     .obligatorio:after{
         content: "*";
         margin-left: 3px;
@@ -705,6 +708,7 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
         font-weight: bold;
     }
 
+/*Grid de los formularios*/
     .a{
         grid-column-start: 2;
         grid-column-end: 3;
