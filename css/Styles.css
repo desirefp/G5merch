@@ -31,7 +31,6 @@ a {
     background-repeat: no-repeat;
     background-color: rgb(224, 223, 223);
     display: grid;
-    /* grid-template-rows: 150px 480px 450px 450px 180px;  */
     grid-template-rows: 150px 2.57fr 2.6fr 2.6fr 140px;
     grid-template-columns: 100%;
 }
@@ -732,3 +731,754 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
     
 /* Terminamos formulario*/
 
+@media only screen and (max-width: 600px) {
+   /* Modificaciones del header en formato móvil*/
+
+    header nav li {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px;
+        background-image:linear-gradient(90deg, rgb(82, 243, 243) 5%, rgb(21, 201, 201) 74%);
+        border:2px solid rgb(255, 255, 255);
+        border-radius: 40px 10px;
+        width: 100px;
+        height: 12px;
+        text-align:center;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px rgb(4, 151, 156);
+        margin-left: 10%;
+        margin-top: 4%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+   }
+
+   header nav  {
+    width: 40%;
+    margin-left: 8%;
+}
+
+header > img {
+    margin-left: 5%;
+}
+
+header nav a {
+    font-size: 1.5vw;
+    } 
+
+/* Cambiamos tamañps de la fuentes*/
+    p {
+        font-size: 1.5vw;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+    
+    h1 {
+        font-size: 2.5vw;
+    }
+    
+    h4 {
+        font-size: 1.8vw;
+    }
+    
+
+
+/* Modificamos el footer en tamaño móvil*/
+
+    footer a h1 {
+        justify-self: flex-start;
+        color:rgb(255, 255, 255);
+        font-family: TipoTitulo;
+        font-size: 7vw;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        width: 35%;
+        margin-left: 15%;
+    }
+    
+    footer nav {
+        width: 260px;
+        
+    }
+    
+    footer nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    footer nav ul li {
+        padding: 4px;
+        margin-left: 5%;
+        border-style: solid;
+        border-radius: 15px 15px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(25, 241, 230);
+        text-decoration: black;
+        margin-top: 5%;
+        width: 60px;
+    }
+    footer nav a {
+        font-size: 2vw;
+    }
+    footer div img {
+        width: 35px;
+        height: 35px;
+    }
+
+    footer > div {
+        width: 90px;
+        height: 90px;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-right: 6%;
+        margin-top: 2%; 
+    }
+
+    /* Ajustamos la portada para el formato móvil*/
+
+    .area1 :first-child {
+        margin-left: 4%;
+    }
+
+    
+    .area1 > img{
+        width: 5%;
+        height: 11%;
+    }
+ 
+    /* Ajustamos la galería para el formato móvil, en este caso cambiamos el grid de manera en que las imágenes
+     queden de 2 en 2, en vez de ir de 4 en 4*/
+
+    .bodygaleria {
+        background-image:url("../Imagenes/fnatic fondo 3.png");
+        background-size: 100% 21%;
+        background-repeat: no-repeat;
+        background-color:  rgb(224, 223, 223);
+        display: grid;
+        grid-template-rows: 150px 400px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 280px 140px;
+        grid-template-columns: 50% 50%;
+    }
+    .bodygaleria > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bodygaleria header {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .bodygaleria > .fotos1 {
+        margin-top: 1%;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .bodygaleria > .fotos2 {
+        grid-row-start: 5;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .bodygaleria > .fotos3 {
+        grid-row-start: 7;
+        grid-row-end: 9;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .bodygaleria > .fotos4 {
+        grid-row-start: 9;
+        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .bodygaleria > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bodygaleria footer {
+        grid-row-start: 11;
+        grid-row-end: 12;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    /* Ajustamos la tienda para que las fotos entren en la pantalla formato móvil*/
+
+    .bodytienda tr img {
+        max-width: 240px;
+    }
+
+    table{
+        width: 80%;
+        margin-left: 2%;
+        border-color:black;
+        margin-top: 5%;
+        display: block;
+    }
+
+    .bodytienda section {
+        margin-left: 8%;
+    }
+
+    /* Ajustamos la sección nosotros, cambiamos el grid de tal manera, que quitamos una columna, para dejar 2
+    y que todo quede bien colocado*/
+
+    .bodynosotros {
+        background-color: rgb(224, 223, 223);
+        display: grid;
+        grid-template-rows: 150px 2fr 1.5fr 1.5fr 0.5fr 0.1fr 140px;
+        grid-template-columns: 50% 50%;
+    }
+
+    .bodynosotros header {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .bodynosotros > footer {
+        grid-row-start: 7;
+        grid-row-end: 8;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    video {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        height: 84%;
+        z-index: -100;
+        object-fit: cover;
+    }
+    
+    .bodynosotros > h4 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        align-self: flex-end;
+        margin-bottom: 4%;
+        width: 90%;
+        justify-self: center;
+    }
+    
+
+    
+    .bodynosotros:nth-child(3) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    .bodynosotros:nth-child(4) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
+    .bodynosotros:nth-child(5) {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+   
+    
+    .preguntas1 h1{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        src: url('AlegreyaSC-Black.ttf');
+        margin-bottom: 1%;
+    }
+
+  
+    .arti3 {
+        margin-left: 50%;
+    }
+
+    .bodynosotros section {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-style: solid;
+        width: 78%;
+        height: 90%;
+        margin-left: 10%;
+        margin-top: 1%;
+        
+    }
+    
+    .bodynosotros > h1 {
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        align-self: center;
+        margin-left: 10%;
+        padding: 5px;
+        border: solid;
+        width: 50%;
+        margin-bottom: 8%;
+        
+    }
+
+    .bodynosotros article > p {
+        width: 90%;
+        border: solid rgb(0, 238, 247) 5px;
+        padding: 1%;
+        margin-left: 5%;
+        font-size: 1.5vw;
+    }
+
+    /* Ajustamos la tienda para que las fotos entren en la pantalla formato móvi*/
+
+    .bodyform {
+        display: grid;
+        grid-template-rows: 150px 0.7fr 2fr 140px;
+        grid-template-columns: 100%;
+        background-color:  rgb(224, 223, 223);
+        
+    }
+
+    .bodyform header {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .bodyform footer {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .b {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .a {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-bottom: 20%;
+    }
+
+
+}
+
+
+    /*Empezamos el formato tablet de la página web*/
+
+    @media only screen and (min-width: 600px) and (max-width: 768px) {
+        /*Header tablet*/
+     
+        header nav li {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 5px;
+            background-image:linear-gradient(90deg, rgb(82, 243, 243) 5%, rgb(21, 201, 201) 74%);
+            border:2px solid rgb(255, 255, 255);
+            border-radius: 40px 10px;
+            width: 100px;
+            height: 20px;
+            text-align:center;
+            font-weight: bold;
+            box-shadow: 2px 2px 5px rgb(4, 151, 156);
+            margin-left: 2%;
+           
+           }
+     
+        header nav > ul {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-inline-start: 0;
+            display:flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-around;
+        }
+     
+        header nav{
+            width: 40%;
+            height: 80%;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-self: flex-end;
+            margin-right: 5%;
+        }
+     
+        header > div {
+            order: 3;
+            box-sizing: border-box;
+            width: 110px;
+            height: 70px;
+            }
+     
+        header nav a {
+            text-decoration:none;
+            font-size: 1.6vw;
+            color: rgb(0, 0, 0);
+            
+            }
+     
+        header > div img {
+            width: 50px;
+            height: 50px;
+                
+                } 
+     
+        #inicio {
+            width: 110px;
+            height: 100px;
+        }
+        
+        /*Fin header tablet*/
+     
+        /*Footer tablet*/
+     
+        footer > div {
+            width: 140px;
+            height: 120px;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-right: 2%;
+            margin-top: 1%;
+            
+        }
+     
+        footer a h1 {
+            justify-self: flex-start;
+            color:rgb(255, 255, 255);
+            font-family: TipoTitulo;
+            font-size: 50px;
+            font-size: 7vw;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            width: 35%;
+            margin-left: 15%;
+        }
+        
+        footer nav {
+            margin-left: 4%;
+            width: 300px;
+            margin-right: 8%;
+            
+        }
+        
+        footer nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        footer nav ul li {
+            padding: 8px;
+            padding: 4px;
+            margin-left: 5%;
+            border-style: solid;
+            border-radius: 15px 15px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(25, 241, 230);
+            text-decoration: black;
+            width: 100px;
+            margin-top: 1%;
+            text-align: center;
+        }
+     
+        footer img {
+            width: 50px;
+            height: 50px;
+            display:flex;
+            margin: 2%;
+            
+        }
+        /*Fin footer tablet*/
+     
+        /*Body portada tablet*/
+     
+        .area1 :first-child {
+            margin-left: 8%;
+                }
+            
+        p {
+            font-size: 1.6vw;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+                }
+                
+        h1 {
+            font-size: 2.5vw;
+                }
+                
+        h4 {
+            font-size: 1.8vw;
+                }
+     
+        /*Fin body portada tablet*/
+        
+    /*Galería tablet*/
+        .bodygaleria {
+        background-image:url("../Imagenes/fnatic fondo 3.png");
+        background-size: 100% 25%;
+        background-repeat: no-repeat;
+        background-color:  rgb(224, 223, 223);
+        display: grid;
+        grid-template-rows: 150px 2.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.3fr 140px;
+        grid-template-columns: 50% 50%;
+    }
+    .bodygaleria > img {margin-bottom: 4%;}
+     
+    .bodygaleria > div img:hover {
+        transform: scale(1.4,1.4);
+        filter: opacity(.5);
+    }
+     
+    .bodygaleria > header {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .bodygaleria > hr {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 92%;
+        height: 0.03%;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(28, 180, 180);
+        align-self: flex-end;
+        margin-bottom: 2%;
+    }
+     
+    .bodygaleria > div{
+        display:flex;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+     
+    .bodygaleria > .fotos1 {
+        margin-top: 1%;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+     
+    .bodygaleria > .fotos2 {
+        grid-row-start: 5;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+     
+    .bodygaleria > .fotos3 {
+        grid-row-start: 7;
+        grid-row-end: 9;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+     
+    .bodygaleria > .fotos4 {
+        grid-row-start: 9;
+        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+     
+    .bodygaleria > div {
+        display: flex;
+        justify-content: space-between;
+    }
+     
+    .footergaleria {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 11;
+        grid-row-end: 12;
+    }
+     
+    /*Fin galería tablet*/
+     
+    /*Tienda tablet*/
+     
+    table {
+        margin:2%;
+    }
+     
+    .bodytienda section{
+        margin-left: 8%;
+    }
+    /*Fin tienda tablet*/
+     
+    /*Nosotros tablet*/
+    .bodynosotros {
+        background-color: rgb(224, 223, 223);
+        display: grid;
+        grid-template-rows: 150px 2fr 1.5fr 1.5fr 1fr 140px;
+        grid-template-columns: 1fr 1fr;
+    }
+     
+    .bodynosotros  h4 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        align-self: flex-end;
+        margin-bottom: 4%;
+        width: 90%;
+        justify-self: center;
+    }
+     
+    .bodynosotros > header {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+     
+     
+    .bodynosotros > footer {
+        grid-row-start: 6;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+     
+    video {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        height: 84%;
+        z-index: -100;
+        object-fit: cover;
+    }
+     
+    .bodynosotros > h4 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        align-self: flex-end;
+        margin-bottom: 4%;
+        width: 90%;
+        justify-self: center;
+    }
+     
+    .bodynosotros > section{
+        background: radial-gradient(circle, rgba(160,211,215,1) 0%, rgba(28,173,167,1) 100%);
+        grid-row-start:5;
+        grid-row-end:6;
+        grid-column-start:1;
+        grid-column-end:3;
+        height: 65%;
+        margin-left: 10%;
+        
+    }
+     
+    .bodynosotros > h1 {
+        background:radial-gradient(circle, rgba(160,211,215,1) 0%, rgba(28,173,167,1) 100%);;
+        grid-row-start:5;
+        grid-row-end:6;
+        grid-column-start:1;
+        grid-column-end:3;
+        margin-top: 20%;
+        margin-left: 10%;
+        width: 50%;
+    }
+     
+    .bodynosotros  article p{
+        font-size: 1.5vw;
+    }
+    .bodynosotros:nth-child(3) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+     
+    .bodynosotros:nth-child(4) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+     
+    }
+     
+    .bodynosotros:nth-child(5) {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-left: 20%;
+    }
+     
+    .arti3{
+        margin-left: 50%;
+    }
+    /*Fin nosotros tablet*/
+    /*Formulario tablet*/
+     
+    .bodyform {
+        display: grid;
+        grid-template-rows: 150px 0.5fr 2fr 140px;
+        grid-template-columns: 1fr;
+        background-color:  rgb(224, 223, 223); 
+    }
+     
+    .b {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .a{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin-bottom: 10%;
+    }
+     
+     
+    .bodyform footer {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+}
+    /*Fin formulario tablet*/
+    
