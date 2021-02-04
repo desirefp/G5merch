@@ -216,7 +216,9 @@ h4 {
 
 
 /*Seccion de Galería */
-/* Para colocar las imágenes de una forma ordenada hemos usado margin para crear un espacio entre ellas y poder centrar la tabla y las imágenes en la página */
+
+/* Hemos añadido una imagen y varias configuraciones para el fondo de la pagina, tambien 
+hemos ajustado el grid a 4 columnas de 25% y 7 lineas de distintos pixeles y fracciones. */
 
 .bodygaleria {
     background-image:url("../Imagenes/fnatic fondo 3.png");
@@ -229,6 +231,7 @@ h4 {
 }
 .bodygaleria > img {margin-bottom: 4%;}
 
+/* Hemos puesto mayor escala y menor opacidad al ponernos encima de cada imagen. */
 .bodygaleria > div img:hover {
     transform: scale(1.4,1.4);
     filter: opacity(.5);
@@ -247,6 +250,8 @@ h4 {
     align-self: flex-end;
     margin-bottom: 2%;
 }
+
+
 
 .bodygaleria > .fotos1 {
     margin-top: 1%;
