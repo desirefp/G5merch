@@ -775,7 +775,7 @@ footer nav ul a {
         font-size: 1.5vw;
     } 
 
-/* Cambiamos tamañps de la fuentes*/
+/* Cambiamos tamaños de la fuentes*/
     p {
         font-size: 1.5vw;
         margin-block-start: 0px;
@@ -826,6 +826,7 @@ footer nav ul a {
         text-decoration: black;
         margin-top: 5%;
         width: 60px;
+        text-align: center;
     }
     footer nav a {
         font-size: 2vw;
@@ -924,20 +925,27 @@ footer nav ul a {
 
     /* Ajustamos la tienda para que las fotos entren en la pantalla formato móvil*/
 
+    .bodytienda > article {
+        margin: 0%;
+    }
+
     .bodytienda tr img {
         max-width: 240px;
     }
 
     table{
-        width: 80%;
+        width: 100%;
         margin-left: 2%;
         border-color:black;
         margin-top: 5%;
         display: block;
+        margin-right: 2%;
     }
 
     .bodytienda section {
-        margin-left: 8%;
+        width: 90%;
+        margin-left: 3%;
+        margin-bottom: 1%;
     }
 
     /* Ajustamos la sección nosotros, cambiamos el grid de tal manera, que quitamos una columna, para dejar 2
@@ -984,6 +992,7 @@ footer nav ul a {
         margin-bottom: 4%;
         width: 90%;
         justify-self: center;
+        font-size: 2vw;
     }
     
     .bodynosotros:nth-child(3) {
@@ -1055,7 +1064,8 @@ footer nav ul a {
         border: solid rgb(0, 238, 247) 5px;
         padding: 1%;
         margin-left: 5%;
-        font-size: 1.5vw;
+        font-size: 1.8vw;
+        text-align: justify;
     }
 
     /* Ajustamos la tienda para que las fotos entren en la pantalla formato móvi*/
@@ -1334,13 +1344,19 @@ footer nav ul a {
     /*Fin galería tablet*/
      
     /*Tienda tablet*/
-     
+    
+    .bodytienda article {
+        margin-left: 0;
+    
+    }
     table {
-        margin:2%;
+        margin: 2%;
+        width: 100%;
     }
      
     .bodytienda section{
-        margin-left: 8%;
+        margin-left: 9%;
+        width: 12%;
     }
     /*Fin tienda tablet*/
      
