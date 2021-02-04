@@ -492,8 +492,6 @@ th {
     border-color: black;
 }
 
-
-
 td{
     
     text-align:center;
@@ -510,15 +508,22 @@ td:first-child {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5%;
+    margin-left: 13%;
 }
 
+article > section {
+    margin-left: 13%;
+}
 
 /*Termina la sección de Tienda*/
 /* Terminamos con las secciones*/
 
 /* Empezamos con el footer*/
-/*En el footer lo que hemos hecho ha sido poner Verdana, una foto de fondo, su respectivo ancho, alto y margen y un borde solido*/
 
+/*Nuestro footer consiste en el nombre de la empresa, un pequeño menú y cuatro imagenes con diferentes formas
+para contactarnos*/
+
+/*Footer con flexbox*/
 footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
@@ -532,7 +537,7 @@ footer {
     align-items: center;
     
 }
-
+/*Grid de los footer de las diferentes paginas*/
 .footerportada {
     grid-row-start: 5;
     grid-row-end: 6;
@@ -545,17 +550,20 @@ footer {
     grid-row-end: 8;
 }
 
+/*Flexbox de las fotos*/
 footer > div {
     width: 140px;
     height: 130px;
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-right: 6%;
+    margin-right: 4%;
     margin-top: 2%;
+    margin-bottom: 1%;
     
 }
 
+/*Nombre de la empresa*/
 footer a h1 {
     justify-self: flex-start;
     color:rgb(255, 255, 255);
@@ -567,10 +575,10 @@ footer a h1 {
     margin-left: 15%;
 }
 
+/*Menú del footer con flexbox*/
 footer nav {
     width: 700px;
-    margin-left: 4%;
-    
+    margin-left: 4%;   
 }
 
 footer nav ul {
@@ -592,13 +600,6 @@ footer nav ul li {
 footer nav ul a {
     color:black;
 }
-
-/*Para la parte que muestra el desarrollador y fecha, hemos hecho una lista no ordenada, ajustado el contenido a lo que queriamos con box-sizing,
- quitado el circulo negro de la lista, metido un float para que fuera a la izquierda y por último, puesto su respectivo ancho y margen arriba.*/
-
-/* En la parte de los contactos lo que hemos hecho ha sido una tabla para colocar las fotos, hemos ajustado el contenido
-con box-sizing, metido un float para colocarlo a la dercha y por último, le hemos puesto su respectivo ancho y alto.*/
-
 
 /* Terminamos el footer */
 
@@ -730,7 +731,8 @@ con box-sizing, metido un float para colocarlo a la dercha y por último, le hem
         grid-row-start: 2;
         grid-row-end: 3;
     }
-    
+
+/*Grid del footer del formulario*/    
     .bodyform footer {
         grid-column-start: 1;
         grid-column-end: 3;
