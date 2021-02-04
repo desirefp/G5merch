@@ -444,13 +444,14 @@ sin circulos negros de lista no ordenada. Distribución grid del section y h1*/
 /* Termina la sección de Nosotros */
 /*Sección de Tienda*/
 
+/*Grid de una columa y tres filas*/
 .bodytienda {
     background-color:  rgb(224, 223, 223);
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 150px 1fr 140px;
 }
-
+/*Grid del header, tabla y footer*/
 .bodytienda > header {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -503,7 +504,7 @@ td:first-child {
     background: linear-gradient(0deg, rgb(10, 116, 116) 0%, rgb(30, 165, 165) 100%);
     font-weight:bold;
 }
-
+/*Añadimos flex-wrap al artículo*/
 .bodytienda > article {
     display: flex;
     flex-wrap: wrap;
