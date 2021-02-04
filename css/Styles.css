@@ -1111,7 +1111,7 @@ footer nav ul a {
 /*Empezamos el formato tablet de la página web*/
 
     @media only screen and (min-width: 600px) and (max-width: 768px) {
-        /*Header tablet*/
+    /*Header tablet*/
      
     header nav li {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -1171,9 +1171,9 @@ footer nav ul a {
         height: 100px;
         }
         
-        /*Fin header tablet*/
+    /*Fin header tablet*/
      
-        /*Footer tablet*/
+    /*Footer tablet*/
      
     footer > div {
         width: 140px;
@@ -1232,9 +1232,9 @@ footer nav ul a {
         margin: 2%;
             
         }
-        /*Fin footer tablet*/
+    /*Fin footer tablet*/
      
-        /*Body portada tablet*/
+    /*Body portada tablet*/
      
     .area1 :first-child {
         margin-left: 8%;
@@ -1254,7 +1254,7 @@ footer nav ul a {
         font-size: 1.8vw;
         }
      
-        /*Fin body portada tablet*/
+    /*Fin body portada tablet*/
         
     /*Galería tablet*/
         .bodygaleria {
