@@ -218,7 +218,7 @@ h4 {
 /*Seccion de Galería */
 
 /* Hemos añadido una imagen y varias configuraciones para el fondo de la pagina, tambien 
-hemos ajustado el grid a 4 columnas de 25% y 7 lineas de distintos pixeles y fracciones. */
+hemos ajustado el grid a 4 columnas de 25% y 7 lineas de distintos tamaños. */
 
 .bodygaleria {
     background-image:url("../Imagenes/fnatic fondo 3.png");
@@ -237,6 +237,8 @@ hemos ajustado el grid a 4 columnas de 25% y 7 lineas de distintos pixeles y fra
     filter: opacity(.5);
 }
 
+/* El posicionamiento del hr y sus ajustes */
+
 .bodygaleria > hr {
     grid-row-start: 2;
     grid-row-end: 3;
@@ -251,7 +253,7 @@ hemos ajustado el grid a 4 columnas de 25% y 7 lineas de distintos pixeles y fra
     margin-bottom: 2%;
 }
 
-
+/* En las siguientes hemos ajustado los 4 divs de fotos en el grid. */
 
 .bodygaleria > .fotos1 {
     margin-top: 1%;
