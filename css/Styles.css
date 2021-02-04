@@ -1491,9 +1491,7 @@ footer nav ul a {
         grid-row-start: 3;
         grid-row-end: 4;
         margin-bottom: 10%;
-    }
-     
-     
+    } 
     .bodyform footer {
         grid-column-start: 1;
         grid-column-end: 2;
