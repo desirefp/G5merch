@@ -650,6 +650,13 @@ footer nav ul a {
         border-color: rgb(255, 255, 255);
     }
 
+    textarea {
+        background-color: rgb(224, 223, 223); ;
+        max-height: 10%;
+        padding: 0%;
+        resize: none;
+    }
+
 /*Botón de enviar y eliminar*/
     .enviar, .restaurar {
         border-radius: 5px;
