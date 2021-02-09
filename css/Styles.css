@@ -509,11 +509,11 @@ td:first-child {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5%;
-    margin-left: 13%;
+    margin-left: 5%;
 }
 
 article > section {
-    margin-left: 13%;
+    margin-left: 10%;
 }
 
 /*Termina la sección de Tienda*/
