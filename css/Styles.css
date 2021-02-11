@@ -607,6 +607,10 @@ footer nav ul a {
 /* Empezamos con el Formulario*/
 
 /*El grid esta distribuido en 2 columnas y 3 filas*/
+
+    input:invalid{
+        background-image: url("../Imagenes/Checkverde.png");
+    }
     .bodyform {
         display: grid;
         grid-template-rows: 150px 1fr 140px;

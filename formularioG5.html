@@ -64,10 +64,10 @@ puesto diversos href -->
     <fieldset>
     <legend>Usuario</legend>
     <label for="email" class="obligatorio">Email:</label>
-    <input type="email" class="field" placeholder="usuario@dominio.com" size="40" name="email" required autocomplete="on" invalid>
+    <input type="email" class="field" placeholder="usuario@dominio.com" size="40" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autocomplete="on" invalid>
 
     <label for="contraseña" class="obligatorio">Contraseña:</label>
-    <input type="password" class="field" name="contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required invalid>
+    <input type="password" class="field" name="contraseña" pattern="[A-Za-z0-9!?-]{8,12}" required invalid/>
     </fieldset>
 
     <textarea cols="100" rows="10" class="field" placeholder="Escribe tu comentario..."></textarea>
