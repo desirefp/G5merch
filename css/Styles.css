@@ -513,7 +513,7 @@ td:first-child {
 }
 
 article > section {
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 /*Termina la sección de Tienda*/
@@ -608,9 +608,17 @@ footer nav ul a {
 
 /*El grid esta distribuido en 2 columnas y 3 filas*/
 
-    input:invalid{
+    form input:valid{
         background-image: url("../Imagenes/Checkverde.png");
+        background-repeat: no-repeat;
+        background-position:340px center;
+        background-size: 20px;
     }
+
+    input:hover {
+        transform: scale(1.1,1.1);
+    }
+
     .bodyform {
         display: grid;
         grid-template-rows: 150px 1fr 140px;
@@ -1118,6 +1126,12 @@ footer nav ul a {
         grid-column-end: 2;
         margin-bottom: 20%;
     }
+    form input:valid{
+        background-image: url("../Imagenes/Checkverde.png");
+        background-repeat: no-repeat;
+        background-position:380px center;
+        background-size: 20px;
+    }
 }
 
 /*Empezamos el formato tablet de la página web*/
@@ -1509,6 +1523,13 @@ footer nav ul a {
         grid-column-end: 2;
         grid-row-start: 4;
         grid-row-end: 5;
+    }
+
+    form input:valid{
+        background-image: url("../Imagenes/Checkverde.png");
+        background-repeat: no-repeat;
+        background-position:380px center;
+        background-size: 20px;
     }
 }
     /*Fin formulario tablet*/

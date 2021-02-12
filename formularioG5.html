@@ -15,10 +15,10 @@
 <!-- Header para mostrar principalmente el logo y el nombre de la empresa, añadimos dos iconos: 
 un login y un carrito de la comprar para registrar los productos que se quieren comprar -->
         <div>
-            <a href="formularioG5.html"><img src="imagenes/usuario.png" width="65px" height="65px"" /> </a>
+            <a href="formularioG5.html"><img src="imagenes/usuario.png" width="65px" height="65px" /> </a>
             <img src="imagenes/carro.png" width="60px" height="60px"/> 
         </div>
-        <img src="imagenes/Logo letras blanco.png" width="140px" height="120px"/ id="inicio"> 
+        <img src="imagenes/Logo letras blanco.png" width="140px" height="120px" id="inicio"> 
 <!-- Para hacer el menú hemos utilizado una lista no ordenada y para enlazar las secciones de la página hemos 
 puesto diversos href -->
         <nav>
@@ -39,7 +39,7 @@ puesto diversos href -->
     <fieldset>
     <legend>Información personal</legend>
     <label for="name" class="obligatorio">Nombre:</label>
-    <input type="text" class="field" name="name" maxlength="30" placeholder="Escribe tu nombre" autofocus required>
+    <input type="text" class="field" name="name" maxlength="30" placeholder="Escribe tu nombre" autofocus required >
 
     <label for="apellido" class="obligatorio">Apellido:</label>
     <input type="text" class="field" name="apellido" maxlength="30" placeholder="Escribe tu apellido" required>
@@ -53,7 +53,7 @@ puesto diversos href -->
     </select>
 
     <label for="telefono" class="obligatorio">Teléfono:</label>
-    <input type="tel" name="telefono" class="field" placeholder="XXXXXXXXX" required pattern="[0-9]{9}">
+    <input type="tel" name="telefono" class="field" placeholder="XXXXXXXXX" required pattern="[0-9]{9}" valid invalid>
 
     <label for="fecha">Fecha de nacimiento:</label>
     <input type="date" value="dd/mm/aaaa" name="fecha" class="field">
@@ -64,16 +64,16 @@ puesto diversos href -->
     <fieldset>
     <legend>Usuario</legend>
     <label for="email" class="obligatorio">Email:</label>
-    <input type="email" class="field" placeholder="usuario@dominio.com" size="40" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autocomplete="on" invalid>
+    <input type="email" class="field" placeholder="usuario@dominio.com" size="40" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autocomplete="on" invalid valid>
 
     <label for="contraseña" class="obligatorio">Contraseña:</label>
-    <input type="password" class="field" name="contraseña" pattern="[A-Za-z0-9!?-]{8,12}" required invalid/>
+    <input type="password" class="field" name="contraseña" pattern="[A-Za-z0-9!?-]{8,12}" required invalid valid/>
     </fieldset>
 
     <textarea cols="100" rows="10" class="field" placeholder="Escribe tu comentario..."></textarea>
     <input type="checkbox" name="información" checked class="cuadrado"/> <p class="check">Deseo recibir información sobre novedades y ofertas</p>
     
-    <input type="checkbox" name="condiciones" required class="cuadrado"/> <p class="check">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos.*</p>
+    <input type="checkbox" name="condiciones" required class="cuadrado"/> <p class="check">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos.</p>
    <div class="botones">
 
 <!--Botones-->
@@ -88,10 +88,10 @@ puesto diversos href -->
 <form>
     <fieldset>
     <label for="email">Email:</label>
-    <input type="email" class="field" placeholder="usuario@dominio.com" size="40" name="email" required autocomplete="on" invalid>
+    <input type="email" class="field" placeholder="usuario@dominio.com" size="40" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autocomplete="on" invalid valid>
 
     <label for="contraseña">Contraseña:</label>
-    <input type="password" class="field" name="contraseña" required invalid>
+    <input type="password" class="field" name="contraseña" pattern="[A-Za-z0-9!?-]{8,12}" required invalid valid>
    
     </fieldset>
 <!--Botón-->
